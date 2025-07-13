@@ -4,4 +4,4 @@ This is a translation repository related to [XMB](https://github.com/miqrogroove
 
 Tag 1.9.12 has the latest stable translations.  Some are complete, others have only been updated with English phrases.
 
-The Master branch is currently unstable.  It includes changes from a future version under development.
+The Main branch is currently unstable.  It includes changes from a future version under development.
