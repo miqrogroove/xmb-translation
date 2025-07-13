@@ -1,15 +1,11 @@
 <?php
 /**
  * eXtreme Message Board
- * XMB 1.9.10 Karl
+ * XMB 1.9.11
  *
  * Developed And Maintained By The XMB Group
- * Copyright (c) 2001-2008, The XMB Group
- * http://www.xmbforum.com
- *
- * Sponsored By iEntry, Inc.
- * Copyright (c) 2007, iEntry, Inc.
- * http://www.ientry.com
+ * Copyright (c) 2001-2012, The XMB Group
+ * http://www.xmbforum2.com/
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -27,14 +23,23 @@
  **/
 
 if (!defined('IN_CODE')) {
+    header('HTTP/1.0 403 Forbidden');
     exit("Not allowed to run this file directly.");
 }
 
-$charset = 'ISO-8859-1';
+// Name assigned by XMB for internal use.
+$devname = 'Dutch';
 
+// Meta Data
+$lang['charset'] = 'ISO-8859-1';
+$lang['iso639'] = 'nl';
+$lang['language'] = 'Nederlands';
+
+// Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";
 $lang['add_buddy'] = "Voeg meer adressen toe";
 $lang['addressname'] = "Adres:";
+$lang['addressupdate'] = "Update";
 $lang['addtime'] = "To crank the base time up, or down, input a number here. Time will be raised, or lowered by this amount for everyone. Put X to add time, or -X to subtract.";
 $lang['addtoaddresses'] = "Voeg toe aan adresboek";
 $lang['addtobuddies'] = "Voeg toe aan adresboek";
@@ -46,6 +51,7 @@ $lang['admin_main_settings4'] = "uiterlijke opties";
 $lang['admin_main_settings5'] = "gebruikers Control";
 $lang['admin_main_settings6'] = "anders";
 $lang['admin_main_settings7'] = 'Captcha afbeelding instellingen';
+$lang['admin_main_settings8'] = 'Bestand bijlage instellingen';
 $lang['admin_rename_fail'] = "Kan de gebruikersnaam niet veranderen. of de gebruikersnaam bestaat niet, of er heeft iemand die naam al in gebruik.";
 $lang['admin_rename_success'] = "gebruikersnaam veranderd.";
 $lang['admin_rename_txt'] = "hernoem gebruiker";
@@ -58,7 +64,7 @@ $lang['adminprofilechange'] = "Dank u , u heeft succesvol een gebruikers profiel
 $lang['adminverifyemail'] = "Controleer gebruikes E-mail Adres";
 $lang['allowrankedit'] = "voorkom dat mods post editen?<br /><span class=\"smalltxt\">(Om te voorkomen dat stafleden posts bewerken van andere stafleden zet edit op no)</span>";
 $lang['alreadyreg'] = "Deze naam/ of e-mail bestaat al , Probeer het opnieuw.";
-$lang['alreadyvoted']  = 'U heeft al gestemd!';
+$lang['alreadyvoted'] = 'U heeft al gestemd!';
 $lang['altadmintools'] = "Administration Tools";
 $lang['altavatar'] = "Avatar";
 $lang['altboardlogo'] = 'Forum Logo';
@@ -103,10 +109,15 @@ $lang['attachmanwhereforum'] = "en het forum is :";
 $lang['attachmanwherename'] = "Waar de volgende bijlage is:";
 $lang['attachmanwheresizegreater'] = "de groote groter is dan  (bytes):";
 $lang['attachmanwheresizesmaller'] = "de groote kleiner is dan  (bytes):";
+$lang['attachmaxdims'] = "De limieten van de plaatjes zijn";
+$lang['attachmaxsize'] = "Upload grootte limiet is";
+$lang['attachmaxtotal'] = "Meerdere uploads, limiet van de grootte per verwerking is";
 $lang['attachment'] = "Bijlage:";
+$lang['attachmentm'] = "Meerdere-bijlages:";
 $lang['attachments'] = "Bijlagen";
 $lang['attachments_num_restored'] = "Bijlage verwerkt";
 $lang['attachments_num_stored'] = "Bijlage opgeslagen";
+$lang['attachmore'] = "Klik hier om nog een bestand te uploaden";
 $lang['attachtoobig'] = "De  bijlage die u probeert te uploaden is te groot.";
 $lang['autoinsertsmilies'] = "Voeg alle smilies toe die er zijn";
 $lang['autoinsertposticons'] = "Voeg alle post icons uit smilies de directory toe";
@@ -174,9 +185,7 @@ $lang['byte'] = "byte(s)";
 $lang['cannotmergesamethread'] = 'sorry maar u kunt geen onderwerpen samenvoegen met zichzelf.';
 $lang['cantsplit'] = "Dit topic kan niet worden opgesplitst, omdat er niet is op gereageerd.";
 $lang['cantthreadprune'] = "Dit topic kan niet worden opgeschoond ,omdat er niet op gereageerd is.";
-$lang['captchastatus'] = 'Main Status:';
-$lang['captcharegstatus'] = 'Registratie Status:';
-$lang['captchapoststatus'] = 'Anoniem Posten Status:';
+$lang['captchacaseon'] = "Deze code is hoofdletter gevoelig.";
 $lang['captchacharset'] = 'Code Karakters:';
 $lang['captchacodelength'] = 'Code Lengte:';
 $lang['captchacodecase'] = 'Hoofdletter gevoelige Code:';
@@ -192,6 +201,11 @@ $lang['captchaimageminfont'] = 'Min Font groote:';
 $lang['captchaimagemaxfont'] = 'Max Font groote:';
 $lang['captchaimagecolor'] = 'gebruik Full Color:';
 $lang['captchaimageinvalid'] = "De afbeelding verificatie code is niet juist. type het nogmaals in ,zoals het in de afbeelding staat.";
+$lang['captchaindebug'] = "Captcha kan niet gebruikt worden in DEBUG mode.";
+$lang['captchapoststatus'] = 'Anoniem Posten Status:';
+$lang['captcharegstatus'] = 'Registratie Status:';
+$lang['captchasearchstatus'] = 'Anonieme zoek status:';
+$lang['captchastatus'] = 'Algemene status:';
 $lang['captchaverification'] = "Captcha Afbeelding Verificatie";
 $lang['cb_advmode'] = "uitgebreid";
 $lang['cb_fomatting'] = "Formateer Mode:";
@@ -238,6 +252,7 @@ $lang['daysold'] = "Dagen oud";
 $lang['db_backup'] = "Database Backup";
 $lang['defaultTimezoneDesc'] = "standaard Tijdzone";
 $lang['delete_all_themes'] = "U kunt het laatste theme niet verwijderen! Uw forum zal niet meer werken!";
+$lang['deleteaborted'] = 'The delete action was aborted due to a protection error.';
 $lang['deletebutton'] = "Verwijder";
 $lang['deletecolon'] = "Verwijder:";
 $lang['deletecurrent'] = "&nbsp;Verwijder huidige file.";
@@ -297,11 +312,21 @@ $lang['evalusercpwelcome'] = '$lang["usercpwelcome"] = "Hallo $xmbuser, Welkom o
 $lang['existingip'] = "Dit ip adres ia al verbannen";
 $lang['export_fid_expl'] = "Naar welk forum (fid) moeten de orphaned onderwerpen worden ondergebracht?";
 $lang['export_fid_not_there'] = "Er is geen forum geselecteerd waar de  orphaned onderwerpen heen moeten.";
+$lang['export_tid_expl'] = "Naar welke thread (tid) moet de dochter berichten verplaatst worden?";
+$lang['export_tid_not_there'] = "Er was geen thread aangegeven om de dochter berichten erheen te verplaatsen";
 $lang['favaddedmsg'] = "Dit onderwerp is aan uw favorieten lijst toegevoegd. U word er nu heen gebracht.";
 $lang['favonlistmsg'] = "Het geselecteerde onderwerp staat al in uw favorieten.";
 $lang['favsdeletedmsg'] = "Het geselecterrde topic is verweijderd uit uw favorietenlijst, U word terug gebracht .";
 $lang['featurewarning'] = "Waarschuwing";
 $lang['filecorrupt'] = "De file die u wilt downloaden is niet correct. Download word afgebroken.";
+$lang['fileuploaderror1'] = 'XMB Fout: De map waar de bijlages opgeslagen zouden moeten worden, is verkeerd.';
+$lang['fileuploaderror2'] = 'Je hebt het maximale aantal van bijlages berijkt';
+$lang['fileuploaderror3'] = 'Het lijkt erop dat er een verkeerde URL in de IMG tag is gegeven.';
+$lang['fileuploaderror4'] = 'Een van de IMG links in je bericht linkt naar een bestand dat geen plaatje is.';
+$lang['fileuploaderror5'] = 'Het plaatje dat je hebt geupload overschrijd onze hoogte en breedte limieten. Verklein je plaatje en probeer opnieuw.';
+$lang['fileuploaderror6'] = 'Sorry, de file die je hebt geupload is te groot.';
+$lang['fileuploaderror7'] = 'XMB Fout: Kon geen tijdelijke map vinden voor externe bijlages.';
+$lang['fileuploaderror8'] = 'Sorry, er was een fout terwijl deze bijlage of plaatjes werd toegevoegd.';
 $lang['floodprotect'] = "Uw laatste reactie was minder dan $SETTINGS[floodctrl] seconden geleden , en u bent niet gemachtigd zo snel te  reageren. als u per ongeluk een dubbel post maakt , is uw eerste post gewoon geplaatst ,en de  2e geannuleert.";
 $lang['floodprotect_u2u'] = "Uw laatste u2u was minder dan  $SETTINGS[floodctrl] seconden geleden , en u bent niet gemachtigd zo snel te  reageren. als u per ongeluk een dubbel post maakt , is uw eerste post gewoon geplaatst ,en de  2e geannuleert.";
 $lang['fnasorry'] = "Sorry, deze optie is momenteel niet te gebruiken...";
@@ -314,25 +339,29 @@ $lang['foldersupdateerror'] = 'De volgende mappen zijn niet verwijderd omdat er 
 $lang['footer_options'] = 'Footer Opties:';
 $lang['forgotpw'] = "wachtwoord vergeten ?";
 $lang['forumjumpselect'] = "Selecteer een Forum";
+$lang['forumnotempty'] = 'Het geselecteerde forum is niet leeg. Een forum moet leeg zijn om deze actie uit te voeren.';
 $lang['forumpruned'] = "Forum succesvol gepruned";
 $lang['forumpermissions'] = 'Forum Permissies:';
 $lang['forumpw'] = "wachtwoord:<br /><small>(laat leeg indien geen)</small>";
 $lang['forumpwinfo'] = "Dit forum is beveiligd met een wachtwoord. om dit forum te bekijken moet u het correcte wachtwoord invoeren.";
 $lang['found'] = "Gevonden";
 $lang['general'] = 'General';
+$lang['generic_file'] = 'Bestand om te uploaden:';
+$lang['generic_missing'] = 'Het item waar je naar vroeg kon niet gevonden worden.';
 $lang['gotobottom'] = "Ga naar beneden";
 $lang['gototop'] = "Ga naar boven";
 $lang['guestpostingonmsg'] = "<br />je hoeft geen lid te zijn om op dit forum te posten.<br /><small> om anoniem te posten moet je niet zijn ingelogd.</small>";
 $lang['gzipcompression'] = "gebruik Gzip Pagina Compressie<br /><small> PHP 4 noodzakelijk</small>";
 $lang['helpbar'] = "Help";
 $lang['hidden'] = "onzichtbaar";
-$lang['hottopic'] = "meer dan  $hottopic replies";
+$lang['hottopiceval'] = "\$lang['hottopic'] = \"meer dan  \$hottopic replies\";";
 $lang['ipreg'] = "Maximaal 1 registratie per ip per dag ?";
 $lang['ignorelist'] = "Ignore Lijst";
 $lang['ignoremsg'] = "Ignore Lijst:<br /><span class=\"smalltxt\">scheid de namen met een komma (i.e. \"Person 1, Person 2,\"). vergeet de komma  niet achter elke naam.</span>";
 $lang['ignoreupdate'] = "Ignore lijst bijgewerkt!";
 $lang['imdeletedmsg'] = "U2U(s) verwijderd. u gaat nu terug naar de inbox.";
 $lang['imgdir'] = "bijlage  Directory:";
+$lang['imgdiradm'] = "Administrator plaatjes map:";
 $lang['impossiblebanall'] = "U kunt niet bannen <strong>all</strong> ips from your board!!";
 $lang['imsavedmsg'] = "Uw U2U bericht is opgeslagen. u gaat nu naar de map opgeslagen .";
 $lang['imsentmsg'] = "Uw u2u bericht is verzonden. U gaat nu terug naar de inbox.";
@@ -347,15 +376,20 @@ $lang['invalidip'] = "ongeldig ip adres indeling";
 $lang['invalidFilename'] = "incorrecte filenaam";
 $lang['invalidtid'] = "Thread kan niet worden samengevoegd. Verkeerd thread ID (tid)";
 $lang['invertselection'] = "Draai  Selectie om";
+$lang['ipbandisable'] = "Deactiveer IP bans";
+$lang['ipbanenable'] = "Activeer IP bans";
 $lang['ipwarning'] = "<br /><strong>LET OP!</strong> uw ip adres is geregistreerd als u uitlogd ben u permanent gebanned.";
 $lang['key'] = 'Key: ';
-$lang['last50today'] = "Laatste $onlinetodaycount leden die vandaag het forum hebben bezocht (waar van toepassing)";
+$lang['langimportfail'] = "De taal kon niet worden ge-importeerd.";
+$lang['langimportsuccess'] = "De taal is successvol ge-importeerd..";
+$lang['last50todayeval'] = "\$lang['last50today'] = \"Laatste \$onlinetodaycount leden die vandaag het forum hebben bezocht (waar van toepassing)\";";
 $lang['lastactive'] = "Laatst gezien:";
 $lang['lastreply1'] = "aan";
 $lang['lastsadmin'] = "u probeert de laatste superadmin te deactiveren. dit is niet slim on te doen als het gedaan is  kan niemand je meer terug zetten naar superadmin.";
 $lang['lastyear'] = "laatste jaar";
 $lang['launchbuddylist'] = "Open adres boek";
 $lang['leaveuntouched'] = "&nbsp;laat bestaande file staan";
+$lang['location'] = "Locatie";
 $lang['locktopic'] = "een gesloten topic";
 $lang['loggedin'] = "Ingelogd als:";
 $lang['loggedinuser'] = "Ingelogde gebruiker:";
@@ -384,6 +418,17 @@ $lang['mergethreadmsg'] = "Het topic is samengevoegd. U word terug gebracht naar
 $lang['mergewithmsg'] = "TID van het onderwerp dat wordt samengevoegd en verwijderd:<br /><span class=\"smalltxt\">viewthread.php?tid=48, Het tid is dan 48</span>";
 $lang['misconlinetoday'] = "De volgende  ";
 $lang['misconlinetoday2'] = " leden hebben vandaag $bbname bezocht";
+$lang['modlog_bump'] = "Thread Bumped";
+$lang['modlog_close'] = "Thread gesloten";
+$lang['modlog_copy'] = "Thread gekopieerd";
+$lang['modlog_empty'] = "Thread Geleegd";
+$lang['modlog_merge'] = "Threads Samengevoegd";
+$lang['modlog_move'] = "Thread Verplaatst";
+$lang['modlog_open'] = "Thread Geopend";
+$lang['modlog_split'] = "Thread Splits op";
+$lang['modlog_threadprune'] = "Thread Pruned";
+$lang['modlog_top'] = "Thread Bovenaan gezet";
+$lang['modlog_untop'] = "Thread Bovenaan gezet ongedaan gemaakt";
 $lang['month1'] = "1 maand";
 $lang['month3'] = "3 maanden";
 $lang['month6'] = "6 maanden";
@@ -392,6 +437,8 @@ $lang['moresmilies'] = "Meer smilies";
 $lang['moved'] = "verplaatst:";
 $lang['moveques'] = "verplaats?";
 $lang['movethreadmsg'] = "Bedankt het topic is verplaatsts. U word terug gebracht naar de onderwerpen lijst.";
+$lang['movetodb'] = 'Verplaats naar database';
+$lang['movetodisk'] = 'Verplaats naar schijf';
 $lang['multipnote'] = "Let op!: om meerdere ip's te gelijk te verbannen, vervang één van de 4 delen van het IP met een * (ex: 220.194.45.*)";
 $lang['multmodnote'] = "Let op!: om meerdere maderators aan te maken, scheidt moderators met een comma (inclusief een spatie) (vb: Moderator 1, Moderator 2)";
 $lang['mysql_tools'] = "Database gereedschap";
@@ -411,6 +458,7 @@ $lang['nextsearch'] = "[Volgende pagina]";
 $lang['no_buddies'] = "Er zijn geen adressen in uw adresboek";
 $lang['no_poll'] = "Dit is geen poll!";
 $lang['no_templates'] = "templates.xmb is niet gevonden.";
+$lang['no_url_fopen'] = "Deze feature is uitgezet door de allow_url_fopen lijn in je servers PHP configuratie";
 $lang['noadminsession'] = "Geen admin login data gevonden.";
 $lang['noadminsession2'] = "Welkom in het administratie controle paneel, draaiend $bbname.";
 $lang['noadminsession3'] = "vul uw gebruikersnaam en wachtwoord  waarvan uw een admin status heeft.";
@@ -437,6 +485,9 @@ $lang['nou2umsg'] = "Er zijn geen berichten in uw U2U box.";
 $lang['numberusing'] = "Gebruikt:";
 $lang['o_attach_submit'] = "Verwijder alle verweesde bijlagen";
 $lang['o_attachments_found'] = " verweesde bijlagen gevonden en verwijderd.";
+$lang['o_poll_submit'] = "Verwijder alle onderliggende polls";
+$lang['o_polls_found'] = "dochter polls gevonden en verwijderd";
+$lang['o_posts_found'] = "Dochter polls gevonden en gearrangeerd";
 $lang['o_threads_found'] = " verweesde onderwerpen gevonden en herondergebracht";
 $lang['onlinecoppa'] = "Leest coppa lincentie";
 $lang['onlinecp'] = "Gebruikt het admin paneel";
@@ -521,6 +572,7 @@ $lang['pruneposttypes'] = "welke soort berichten wil je opschonen?: ";
 $lang['prunetopped'] = "Topped onderwerpen";
 $lang['pruneusers'] = "Het aantal dagen dat een nieuwe gebruiker, die niet ingelogd heeft, zal worden verwijderd.<br />Zet op 0 om uit te schakelen.";
 $lang['pspell_needed'] = "(<strong>deze optie kan niet aangezet worden voordat je host het pspell/aspell extentie installeerd!</strong>)";
+$lang['pwchange'] = "Wachtwoord wijzigen";
 $lang['pwnomatch'] = "wachtwoord komt niet overeen";
 $lang['pwnote'] = "vul uw wachtwoord in als u hem wilt veranderen, zo neit vul dan niks in.";
 $lang['queries'] = "Tekens";
@@ -540,6 +592,7 @@ $lang['reggedonly'] = "je moet geregistreerd zijn om dit forum te kunnen bekijke
 $lang['registerrulestitle'] = "Registratie voorwaarden";
 $lang['regques'] = "je registreren?";
 $lang['refreshpage'] = 'Ververs de pagina';
+$lang['regeneratethumbnail'] = "Regenereer thumbnail";
 $lang['renamefile'] = "&nbsp;hernoem huidig bestand:";
 $lang['repair'] = 'Repareer tabellen';
 $lang['replace'] = "Vervang";
@@ -558,7 +611,11 @@ $lang['restrictedname'] = "Current usernames &amp; e-mail addresses not allowed"
 $lang['restrictedupdate'] = "verboden'gebruikersnamen succesvol bijgewerkt!";
 $lang['rulesoninfo'] = "De <a href=\"mailto:$adminemail\"> forum administratie</a> heeft als eis dat alle nieuwe leden eerst de forumregels moeten goedkeuren voordat ze zich kunnen aanmelden, en gebruik kunnen maken van het forum \"$bbname\". Lees a.j.b. de regels door en als je hiermee instemt, selecteer dan de  \"Ik accepteer\" knop onderaan dit formulier.";
 $lang['search_advanced'] = "geavanceerd zoeken";
-$lang['searchusermsg'] = '<a href="misc.php?action=search&amp;srchuname=*USER*&amp;searchsubmit=a&amp;srchfid=all&amp;srchfrom=0">zoek</a> naar alle berichten van deze gebruiker';
+$lang['searchbody'] = "Bericht inhoud en onderwerp";
+$lang['searchguesterror'] = "Anonieme gebruikers zijn gelimiteerd tot 1 pagina van zoek resultaten.";
+$lang['searchinvalid'] = "Ingevoerde zoekopdracht mag niet. Probeer iets anders.";
+$lang['searchsubject'] = "Betreft alleen.";
+$lang['searchusermsg'] = '<a href="search.php?srchuname=*USER*&amp;searchsubmit=a&amp;f=all&amp;srchfrom=0">zoek</a> naar alle berichten van deze gebruiker';
 $lang['secure_login'] = "hogere beveiliging - (Selecteer deze optie als u een openbare computer gebruikt.(";
 $lang['selecttemplate'] = "kies je template....";
 $lang['seperatebycomma'] = "Scheid meerdere items dmv komma's";
@@ -657,6 +714,7 @@ $lang['textborder'] = "Eand kleur:";
 $lang['textborderwidth'] = "Rand breedte:";
 $lang['textbriefsummary'] = "Overzicht instellingen van";
 $lang['textbstatus'] = "forum Status:";
+$lang['textbstatusdefault'] = "Dit forum is op dit moment uitgeschakeld.";
 $lang['textbuddylist'] = "Adres boek";
 $lang['textbumpthread'] = "duw onderwerp op";
 $lang['textby'] = "door";
@@ -746,11 +804,30 @@ $lang['textfaqstatus'] = "FAQ Status:";
 $lang['textfavorites'] = "Favorieten";
 $lang['textfeb'] = "Februarie";
 $lang['textfilename'] = "Filenaam:";
+$lang['textfilesbase'] = 'Bijlage Virtuele URL:<br /><span class="smalltxt">Optioneel, basis URL als die anders is dan $full_url.</span>';
 $lang['textfilesize'] = "Filegroote:";
+$lang['textfilesminsize'] = 'Bijlage minimale opslag grootte:<br /><span class="smalltxt">Opslag pad is genegeerd voor bestanden<br/>kleiner dan deze hoeveelheid bytes.</span>';
+$lang['textfilespath'] = 'Bijlage opslag pad:<br /><span class="smalltxt">Optioneel, opslag locatie voor nieuwe bestanden.</span>';
+$lang['textfilesperpost'] = 'Maximaal aantal bestanden per bericht:';
+$lang['textfilessizeh'] = 'Maximale afbeelding hoogte:';
+$lang['textfilessizew'] = 'Maximale afbeelding breedte:';
+$lang['textfilessubdir'] = 'Bijlage submap schema:';
+$lang['textfilessubdir1'] = 'Jaar / Maand';
+$lang['textfilessubdir2'] = 'Jaar / Maand / Dag';
+$lang['textfilesthumbh'] = 'Maximaal thumbnail hoogte:';
+$lang['textfilesthumbw'] = 'Maximaal thumbnail breedte:';
+$lang['textfilesurlpath'] = 'Bijlage URL formaat:<br /><span class="smalltxt">Voor geavanceerde webmasters</span>';
+$lang['textfilesurlpath1'] = '____(standaard) /files.php?pid=$pid&amp;aid=$aid';
+$lang['textfilesurlpath2'] = '(+MultiViews) /files/$pid/$aid/';
+$lang['textfilesurlpath3'] = '(+MultiViews) /files/$aid/$filename';
+$lang['textfilesurlpath4'] = '(mod_rewrite) /$pid/$aid/';
+$lang['textfilesurlpath5'] = '(mod_rewrite) /$aid/$filename';
 $lang['textfixlastposts'] = "Repareer laatste posts";
 $lang['textfixmemposts'] = "Repareer leden post totalen";
 $lang['textfixmoods'] = "Reset lege stemmingen";
 $lang['textfixoattachments'] = "Repareer verweesde bijlagen";
+$lang['textfixopolls'] = "Repareer onderliggende polls";
+$lang['textfixoposts'] = "Repareer onderliggende berichten";
 $lang['textfixothreads'] = "repareer verweesde onderwerpen";
 $lang['textfixposts'] = "Repareer forum totalen";
 $lang['textfixthread'] = "Repareer onderwerp totalen";
@@ -767,7 +844,7 @@ $lang['textforwardu2utoemail'] = "zend naar mijn e-mail";
 $lang['textfrom'] = "Van:";
 $lang['textfwd'] = "Fwd:";
 $lang['textgetip'] = "Get IP";
-$lang['textgetnews'] ="ontvang nieuwsbrieven van de admin?";
+$lang['textgetnews'] = "ontvang nieuwsbrieven van de admin?";
 $lang['textgo'] = "Bekijk resultaten";
 $lang['textguest1'] = "Gast";
 $lang['textguests'] = "Gasten";
@@ -785,7 +862,6 @@ $lang['texticq'] = "ICQ:";
 $lang['textillegalquery'] = "het teken dat je gebruikte is niet toegestaan.";
 $lang['textimgcode'] = "IMG Code";
 $lang['textimgcodeis'] = "[img] Code is";
-$lang['textimportsubmit'] = "Importeer Theme naar $bbname";
 $lang['textimporttheme'] = "Importeer Theme:";
 $lang['textinforum'] = "in forum:";
 $lang['textinthread'] = "In Onderwerp:";
@@ -880,6 +956,7 @@ $lang['textoct'] = "Oktober";
 $lang['textoff'] = "uit";
 $lang['textoffline'] = "Offline";
 $lang['textoftotposts'] = "van aantal posts";
+$lang['textoldpassword'] = "Oud wachtwoord";
 $lang['texton'] = "Aan";
 $lang['textonline'] = "Online";
 $lang['textopenthread'] = "Open Thread";
@@ -927,6 +1004,7 @@ $lang['textregdate'] = "Registratie Datum";
 $lang['textreggedonly'] = "Alleen leden mogen dit forum bekijken?";
 $lang['textregister'] = "Registreer";
 $lang['textregistered'] = "Registreerde:";
+$lang['textremoteimages'] = 'Voeg plaatjes toe van andere websites<br /><span class="smalltxt">Converteer niewe [img] BBCode naar bijlages.</span>';
 $lang['textreplies'] = "Antwoorden:";
 $lang['textreply'] = "Antwoord";
 $lang['textreplytrash'] = "Antwoord en verwijder";
@@ -1047,9 +1125,9 @@ $lang['theme_already_exists'] = "Een theme met deze naam bestaat al!";
 $lang['themes'] = "Themes";
 $lang['themeupdate'] = "Themes succesvol bijgewerkt!";
 $lang['threads'] = '';
+$lang['thumbnail'] = 'Thumbnail';
 $lang['tickercontents'] = "Nieuws in Nieuwsbalk:";
 $lang['tickername'] = "Nieuws &amp; Updates";
-$lang['tidnoexist'] = "Thread kon niet worden samengevoegd. Thread ($othertid) bestaat niet";
 $lang['timemsg'] = "Verwerkt in";
 $lang['timezone1'] = "(GMT -12:00) Eniwetok, Kwajalein";
 $lang['timezone10'] = "(GMT -3:30) Newfoundland";
@@ -1104,7 +1182,20 @@ $lang['toppedpost'] = "Deze post is getopped";
 $lang['toppedprefix'] = "pin.gif";
 $lang['topthreadmsg'] = "U heeft  met succes  het onferwerp getopped /untopped u gaat nu terugnaar de onderwerpem";
 $lang['topuntop'] = "Top/Untop";
+$lang['translations'] = "Vertalingen";
+$lang['translation_delete'] = "Vertalingen verwijderd.";
+$lang['translation_import'] = "Installeer nieuwe taal";
+$lang['translation_name'] = "Vertaling naam";
+$lang['translation_phrase'] = "Zinsdeel Naam";
+$lang['translation_select'] = "Selecteer alstublieft een zinsdeel...";
+$lang['translation_update'] = "Zinsdeel tekst succesvol opgeslagen.";
 $lang['u2uadmin_noperm'] = "U heeft geen permissie om dit te gebruiken.";
+$lang['u2ualert1'] = "U2U alarmeer toevoeging";
+$lang['u2ualert2'] = "Op elke pagina";
+$lang['u2ualert3'] = "Alleen op index";
+$lang['u2ualert4'] = "Geen alarm";
+$lang['u2ualert5'] = " Ongelezen U2U. Wil je deze nu bekijken?";
+$lang['u2ualert6'] = " Ongelezen U2U's. Wil je deze nu bekijken?";
 $lang['u2ublocked'] = "De ontvanger van deze u2u heeft  geblokked, U kunt dit bericht niet versturen.";
 $lang['u2udump'] = "Verwijder alle u2u";
 $lang['u2udump_confirm'] = 'Weet u zeker dat u alle u2u wilt verwijderen?';
@@ -1123,6 +1214,7 @@ $lang['uploadinstead'] = "&nbsp;Upload anders deze file:";
 $lang['usercpeditpromsg'] = "U heeft uw profiel bijgewerkt. U gaat nu terug naar het controle paneel.";
 $lang['userip'] = "Zoek naar gebruiker met het volgende ip adres";
 $lang['username_length_invalid'] = 'De lengte van uw gebruikers naam is niet correct. Kies een naam die minimaal 3 letters en met een  maximum van 32 letters.';
+$lang['usernamechars'] = "Gebruikersnamen mogen ongewone karakters hebben, behalve []'&lt;&gt;\|&quot;,@";
 $lang['userprofilemood'] = "Huidige stemming:";
 $lang['verificationnote'] = "type de text in die in de afbeelding staat. Dit process is nodig om eventuele spambots te voorkomen.";
 $lang['viaemail'] = 'Via E-mail';
@@ -1152,5 +1244,6 @@ $lang['whosonline_on'] = "wie is online in de index:";
 $lang['whosonlinetoday'] = "Wie is er vandaag op het forum";
 $lang['whoview'] = "Kan dit forum bekijken?";
 $lang['xmb'] = "XMB";
+$lang['xmbforum'] = '<abbr title="eXtreme Message Board">XMB</abbr> Forum Software';
 $lang['xmbgroup'] = "De XMB Group";
 ?>
