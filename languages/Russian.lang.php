@@ -1,10 +1,10 @@
 <?php
 /**
  * eXtreme Message Board
- * XMB 1.9.8 Engage Final SP3
+ * XMB 1.9.10 Karl
  *
- * Developed By The XMB Group
- * Copyright (c) 2001-2007, The XMB Group
+ * Developed And Maintained By The XMB Group
+ * Copyright (c) 2001-2008, The XMB Group
  * http://www.xmbforum.com
  *
  * Sponsored By iEntry, Inc.
@@ -108,8 +108,8 @@ $lang['attachments'] = "Прикрепления:";
 $lang['attachments_num_restored'] = "восстановленные прикрепления";
 $lang['attachments_num_stored'] = "прикрепления сохранены";
 $lang['attachtoobig'] = "Прикрепляемый вами файл слишком велик.";
-$lang['autoinsertposticons'] = "Вставить все иконки сообщений из папки со смайликами";
-$lang['autoinsertsmilies'] = "Вставить все смайлики из папки со смайликами";
+$lang['autoinsertposticons'] = "Вставить все иконки сообщений из директории со смайликами";
+$lang['autoinsertsmilies'] = "Вставить все смайлики из директории со смайликами";
 $lang['avatar_too_big'] = "У вас слишком большая аватара! Максимальные размеры, допустимые на этом форуме: ";
 $lang['aweek'] = "неделя";
 $lang['backto'] = "Назад в:";
@@ -314,6 +314,7 @@ $lang['foldersupdateerror'] = 'Следующие папки не были удалены, т.к. они содержа
 $lang['footer_options'] = 'Опции нижнего колонтитула (футера):';
 $lang['forgotpw'] = "Забыли пароль?";
 $lang['forumjumpselect'] = "Выберите форум:";
+$lang['forumpermissions'] = 'Права доступа к форуму:';
 $lang['forumpruned'] = "Форум очищен";
 $lang['forumpw'] = "Пароль:<br /><span class=\"smalltxt\">(оставьте пустым, если пароля нет)</span>";
 $lang['forumpwinfo'] = "Этот форум защищен паролем. Для его просмотра вы должны ввести соответствующий пароль.";
@@ -422,7 +423,7 @@ $lang['nomember'] = "Пользователь не выбран";
 $lang['nomoodtext'] = "Без эмоций";
 $lang['nonewposts'] = "Со времени последнего визита в этом форуме новых сообщений не появилось";
 $lang['noposts'] = "В этом форуме сообщений пока нет";
-$lang['noPostsTimePeriod'] = "За указанное время не было оставленно ни одного сообщения";
+$lang['noPostsTimePeriod'] = "Ни одного поста небыло оставлено за этот период";
 $lang['nopoststoday'] = "За последние 24 часа сообщений не было";
 $lang['nopruneforums'] = 'Не были выбраны форумы для очистки';
 $lang['noresults'] = "Соответствий не найдено.";
@@ -571,7 +572,7 @@ $lang['smileyinsert'] = "Автоматическая вставка смайликов:";
 $lang['smilieexists'] = 'Смайлик уже есть';
 $lang['smiliepreview'] = "Предварительный просмотр";
 $lang['smilies'] = "Смайлики";
-$lang['smiliesadded'] = "Смайлики Добавлены";
+$lang['smiliesadded'] = "Смайлы были добавлены";
 $lang['smilieupdate'] = "Смайлики Обновлены";
 $lang['smtotal'] = "Общее количество кликабельных смайликов:";
 $lang['sortby'] = "и сортировать их по";
@@ -864,7 +865,7 @@ $lang['textnoaction'] = "Извините, у вас недостаточно прав для выполнения этой о
 $lang['textnocat'] = "- Нет категории -";
 $lang['textnofolder'] = "Нет выбранной папки";
 $lang['textnoforum'] = "Форума, которого вы выбрали, не существует.";
-$lang['textnoforumsexist'] = "Форумов не существуют.";
+$lang['textnoforumsexist'] = "Нет существующих форумов";
 $lang['textnoguestposting'] = "Анонимные пользователи не могут создавать сообщения на этом форуме. Вы должны <a href=\"member.php?action=coppa\">зарегистрироваться</a>, чтобы создавать сообщения на этом форуме.";
 $lang['textnomur'] = 'Вы не можете пометить исходящее личное сообщение как прочитанное';
 $lang['textnone'] = "Нет";
@@ -1084,7 +1085,7 @@ $lang['timezone7'] = "(GMT -6:00) Central Time (US &amp; Canada), Mexico City, C
 $lang['timezone8'] = "(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima, Quito";
 $lang['timezone9'] = "(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz, Santiago";
 $lang['tocont'] = "чтобы продолжить.";
-$lang['todaydays'] = "дней";
+$lang['todaydays'] = "дни";
 $lang['todaygo'] = "Вперед!";
 $lang['todayshow'] = "Показать активные темы";
 $lang['too_few_pollopts'] = "Слишком мало вариантов ответа. Минимальное количество - 2.";
@@ -1123,7 +1124,7 @@ $lang['usercpeditpromsg'] = "Вы отредактировали данные своего профиля. Сейчас вы
 $lang['userip'] = "Поиск пользователя со следующим IP-адресом";
 $lang['username_length_invalid'] = "Вы ввели неправильное имя пользователя. Оно должно содержать минимум 3 и максимум 32 знака.";
 $lang['userprofilemood'] = "Состояние духа в данный момент:";
-$lang['verificationnote'] = "Пожалуйста введите код показанный на картинке в поле находящееся под ней. Это нужно для предотвращения регистрации автоматических ботов.";
+$lang['verificationnote'] = "Пожалуйста введите код показанный на картинке в поле расположенное под ней. Это нужно для предотвращения регистрации автоматических ботов.";
 $lang['viaemail'] = 'по e-mail';
 $lang['viau2u'] = 'личным сообщением';
 $lang['view'] = 'Просмотр';
@@ -1145,8 +1146,6 @@ $lang['whocanpost22'] = "Администраторы могут писать ответы.";
 $lang['whocanpost23'] = "Администраторы и модераторы могут писать ответы.";
 $lang['whocanpost24'] = "ответы запрещены.";
 $lang['whoodump_confirm'] = 'Вы уверены, что хотите очистить "Кто на форуме"?';
-$lang['whopostop1'] = "Кто может создавать новые темы?";
-$lang['whopostop2'] = "Кто может размещать ответы?";
 $lang['whosoneval'] = '$lang["whosonmsg"] = "Сейчас $guestn, $membern и $hiddenn смотрят $bbname";';
 $lang['whosonline'] = "Кто На Форуме";
 $lang['whosonline_on'] = "\"Кто На Форуме\" на главной странице:";
