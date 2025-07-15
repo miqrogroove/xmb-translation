@@ -34,6 +34,7 @@ $devname = 'Dutch';
 $lang['charset'] = 'ISO-8859-1';
 $lang['iso639'] = 'nl';
 $lang['language'] = 'Nederlands';
+$lang['old_mysql_charset'] = 'latin1';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

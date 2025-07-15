@@ -34,6 +34,7 @@ $devname = 'Japanese';
 $lang['charset'] = 'UTF-8';
 $lang['iso639'] = 'ja';
 $lang['language'] = '&#26085;&#26412;&#35486;';
+$lang['old_mysql_charset'] = 'utf8mb4';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

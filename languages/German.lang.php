@@ -34,6 +34,7 @@ $devname = 'German';
 $lang['charset'] = 'ISO-8859-1';
 $lang['iso639'] = 'de';
 $lang['language'] = 'Deutsch';
+$lang['old_mysql_charset'] = 'latin1';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

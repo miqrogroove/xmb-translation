@@ -34,6 +34,7 @@ $devname = 'Turkish';
 $lang['charset'] = 'windows-1254';
 $lang['iso639'] = 'tr';
 $lang['language'] = 'T&uuml;rk&ccedil;e';
+$lang['old_mysql_charset'] = 'latin5';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

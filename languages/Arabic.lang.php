@@ -34,6 +34,7 @@ $devname = 'Arabic';
 $lang['charset'] = 'windows-1256';
 $lang['iso639'] = 'ar';
 $lang['language'] = '&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;';
+$lang['old_mysql_charset'] = 'cp1256';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

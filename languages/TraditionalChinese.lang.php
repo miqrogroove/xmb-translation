@@ -34,6 +34,7 @@ $devname = 'TraditionalChinese';
 $lang['charset'] = 'Big5';
 $lang['iso639'] = 'zh';
 $lang['language'] = '&#32321;&#39636;&#23383;';
+$lang['old_mysql_charset'] = 'big5';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

@@ -34,6 +34,7 @@ $devname = 'Estonian';
 $lang['charset'] = 'ISO-8859-1';
 $lang['iso639'] = 'et';
 $lang['language'] = 'Eesti';
+$lang['old_mysql_charset'] = 'latin1';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

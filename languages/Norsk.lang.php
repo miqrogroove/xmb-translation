@@ -34,6 +34,7 @@ $devname = 'Norsk';
 $lang['charset'] = 'ISO-8859-1';
 $lang['iso639'] = 'no';
 $lang['language'] = 'Norsk';
+$lang['old_mysql_charset'] = 'latin1';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

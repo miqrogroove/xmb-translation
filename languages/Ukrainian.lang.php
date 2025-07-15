@@ -34,6 +34,7 @@ $devname = 'Ukrainian';
 $lang['charset'] = 'windows-1251';
 $lang['iso639'] = 'uk';
 $lang['language'] = '&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;';
+$lang['old_mysql_charset'] = 'cp1251';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

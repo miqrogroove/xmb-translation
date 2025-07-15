@@ -34,6 +34,7 @@ $devname = 'Albanian';
 $lang['charset'] = 'ISO-8859-1';
 $lang['iso639'] = 'sq';
 $lang['language'] = 'Shqip';
+$lang['old_mysql_charset'] = 'latin1';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

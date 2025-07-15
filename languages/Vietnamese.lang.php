@@ -34,6 +34,7 @@ $devname = 'Vietnamese';
 $lang['charset'] = 'UTF-8';
 $lang['iso639'] = 'vi';
 $lang['language'] = 'Vi&#7879;t';
+$lang['old_mysql_charset'] = 'utf8mb4';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

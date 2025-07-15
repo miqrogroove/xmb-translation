@@ -31,9 +31,10 @@ if (!defined('IN_CODE')) {
 $devname = 'Finnish';
 
 // Meta Data
-$lang['charset'] = 'ISO-8859-10';
+$lang['charset'] = 'ISO-8859-10'; // This is an old formality.  All characters in this file are safely viewed and edited as ISO-8859-1 or Windows-1252 plain text.
 $lang['iso639'] = 'fi';
 $lang['language'] = 'Suomi';
+$lang['old_mysql_charset'] = 'none'; // MySQL never officially supported ISO-8859-10. PHP conversion will be required.
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";

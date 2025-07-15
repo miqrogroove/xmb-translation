@@ -34,6 +34,7 @@ $devname = 'Hungarian';
 $lang['charset'] = 'ISO-8859-2';
 $lang['iso639'] = 'hu';
 $lang['language'] = 'Magyar';
+$lang['old_mysql_charset'] = 'latin2';
 
 // Translation
 $lang['4spaces'] = "&nbsp;&nbsp;&nbsp;&nbsp;";
