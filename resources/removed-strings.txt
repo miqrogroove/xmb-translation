@@ -1,4 +1,4 @@
-
+$lang['admin_rename_fail'] = "Could not rename user. Either the user does not exist, or there's more than one.";
 $lang['altmsnyes'] = "This user has MSN Messenger";
 $lang['altrules'] = "Board Rules";
 $lang['captchaindebug'] = "Captcha features are not available in DEBUG mode.";
