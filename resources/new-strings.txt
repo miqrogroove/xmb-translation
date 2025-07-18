@@ -9,6 +9,7 @@ $lang['automatic'] = "Auto";
 $lang['beenfound_post'] = "posts found.";
 $lang['beenfound_post_singular'] = 'post found.';
 $lang['beenfound_singular'] = 'account found.';
+$lang['captcha_not_working'] = "CAPTCHA is not working. Usually, this means the GD or FreeType software is missing from your PHP server.";
 $lang['close_window'] = "Close Window";
 $lang['config_error'] = "Incorrect Configuration";
 $lang['config_error_connect'] = "Unable to connect to the database specified in config.php.";
