@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-alpha
+ * XMB 1.10.00-beta-1
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -88,7 +88,6 @@ $lang['altpostnewthread'] = "Poster une nouveau sujet";
 $lang['altquote'] = "Répondre en citant";
 $lang['altredfolder'] = "Dossier rouge";
 $lang['altreportpost'] = "Avertir le staff";
-$lang['altrules'] = "Règles du forum";
 $lang['altsearch'] = "Chercher";
 $lang['altstats'] = "Stats du forum";
 $lang['alttodayposts'] = "Messages du jour";
@@ -335,6 +334,7 @@ $lang['device_agent_hdr'] = "Navigateur";
 $lang['device_delete_btn'] = "Supprimer les appareils sélectionnés";
 $lang['device_id_hdr'] = "ID";
 $lang['device_login_date'] = "Date de connexion";
+$lang['device_name_hdr'] = "My Comments";
 $lang['device_this'] = "Actuel";
 $lang['dotfolders'] = "Activer la fonction 'dot' ?<br /><span class=\"smalltxt\">Grâce à des icônes munies d'un point (dot), les membres peuvent savoir s'ils ont déjà participé à un sujet.</span>";
 $lang['doublee'] = "Autoriser les E-mails en double ?";
@@ -511,6 +511,7 @@ $lang['locktopic'] = "Un sujet fermé";
 $lang['loggedin'] = "Connecté en tant que:";
 $lang['loggedinuser'] = "Connecté en tant que ";
 $lang['login_audit_mail'] = " Le compte suivante a reçu trop de mauvaises tentatives de connexions, il est temporairement bloqué.";
+$lang['login_comment'] = "Name This Browser - optional";
 $lang['login_lockout'] = "Votre mot de passe est temporairement verrouillé en raison d'un trop grand nombre de tentatives.";
 $lang['login_trusted'] = "Faire confiance à cet appareil - Restez connecté";
 $lang['logs'] = 'Logs';
@@ -659,9 +660,6 @@ $lang['no_url_fopen'] = "Cette fonctionnalité a été désactivée par la directive 
 $lang['numberusing'] = "Utilisé:";
 $lang['okay'] = "OK";
 $lang['onlinebuddy'] = "Regardant son carnet d'adresses";
-$lang['onlinebuddyadd'] = "Ajoutant un utilisateur à son carnet d'adresses ";
-$lang['onlinebuddyadd2u2u'] = "Ajoutant un utilisateur à un U2U";
-$lang['onlinebuddydelete'] = "Effaçant un utilisateur de  son carnet d'adresses";
 $lang['onlinebuddyedit'] = "Éditant son carnet d'adresses";
 $lang['onlinecatunknown'] = "Regardant une catégorie inconnue";
 $lang['onlinecp'] = "Utilisant le Panneau d'Administration";
@@ -702,7 +700,7 @@ $lang['onlineu2usend'] = "Envoyant un message privé";
 $lang['onlineu2uview'] = "Lisant un message privé";
 $lang['onlineunknown'] = "Exécutant une action inconnue";
 $lang['onlineviewcat'] = "Regardant catégorie: ";
-$lang['onlineviewpro'] = "Consultant le profil de \$member";
+$lang['onlineviewpro'] = "Viewing a member's profile";
 $lang['onlineviewthread'] = "Lisant le sujet: ";
 $lang['onlinevote'] = "Votant";
 $lang['onlinewhosonline'] = "Consultant les membres en ligne";
@@ -728,7 +726,6 @@ $lang['plaintext'] = "Plain Text";
 $lang['plogtuf'] = "Cette opération ne sera pas disponible tant que vous serez connecté, veuillez vous <a href='misc.php?action=logout'>déconnecter</a> avant de réessayer.";
 $lang['poll'] = "Sondage :";
 $lang['pollanswers'] = "Réponses (1 réponse par ligne, max 10) :";
-$lang['pollprefix'] = "pollsmall.gif";
 $lang['polls'] = "Sondages";
 $lang['pollvotenotselected'] = "Vous n'avez choisi aucune option de sondage";
 $lang['posticonsadded'] = "L'Icône à été ajoutée.";
@@ -1374,7 +1371,6 @@ $lang['tool_whosonline'] = "Effacer l'option en ligne";
 $lang['too_few_pollopts'] = "Vous avez donné trop peu d'options de vote. Le nombre minimal est de 2.";
 $lang['topmsgques'] = "Sujet en tête de liste ?";
 $lang['toppedpost'] = "Ce message est mis en tête de liste";
-$lang['toppedprefix'] = "TOP:";
 $lang['topthreadmsg'] = "Activation/Désactivaction du Top Thread réalisée avec succès. Vous allez être redirigé vers la liste des messages.";
 $lang['topuntop'] = "Monter/Descendre";
 $lang['translations'] = "Traductions";
@@ -1401,7 +1397,6 @@ $lang['u2uquota'] = "Quota de messages privés (U2U) :";
 $lang['u2ureachedquota'] = "Vous avez atteint votre quota de messages privés (U2U). Vous devez en détruire certains avant de continuer";
 $lang['u2ureadstatus'] = "Statut:";
 $lang['uncheckall'] = "Décochez tout";
-$lang['uploadDisabled'] = "The file upload feature is disabled.  Please check the configuration of your PHP server.";
 $lang['upgrade'] = "Insérer votre requête SQL ici (upgrade.txt).";
 $lang['upgradenote'] = "Note: \$table_something est automatiquement remplacée par xmb par le nom réel de la table de donnée(eg xmb_something), vous n'avez pas à le faire (vous pouvez le faire!).";
 $lang['upgraderesults'] = "Résultats de recherche:";
@@ -1427,6 +1422,7 @@ $lang['upgrade_step_4'] = "Confirm your forum database account is granted all pr
 $lang['upgrade_step_5'] = "Upload the \$ver files.";
 $lang['upgrade_step_6'] = "Run this upgrade script by visiting the installer page.";
 $lang['upgrade_step_7'] = "When finished, enable your forums using the Board Status setting.";
+$lang['uploadDisabled'] = "The file upload feature is disabled.  Please check the configuration of your PHP server.";
 $lang['uploadinstead'] = "&nbsp;envoyer ce fichier à la place.";
 $lang['usercpeditpromsg'] = "Vos préférences ont été modifiées avec succès. Maintenant, vous allez être redirigé vers votre Panneau de Contrôle Personnel";
 $lang['userip'] = "Rechercher les utilisateurs dont l'adresse IP est";
