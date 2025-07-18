@@ -565,7 +565,7 @@ $lang['mergethreadmsg'] = "Viestiketjut on yhdistetty. Sinut ohjataan takaisin k
 $lang['mergewithmsg'] = "Yhdistett‰v‰n viestiketjun numero<br /><small>(n‰et numeron osoitteesta, esim. viewthread.php?tid=48, on numero 48)</span>";
 $lang['message'] = "Viesti";
 $lang['misconlinetoday'] = "Seuraavat ";
-$lang['misconlinetoday2'] = " $bbname k‰ytt‰j‰‰ vieraillut t‰n‰‰n.";
+$lang['misconlinetoday2'] = " k‰ytt‰j‰‰ vieraillut t‰n‰‰n.";
 $lang['moderation_actions'] = "Actions";
 $lang['moderation_anonq'] = "Anonymous Posting Queue";
 $lang['moderation_approve'] = "Approve";
