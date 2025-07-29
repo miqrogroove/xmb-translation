@@ -2,7 +2,7 @@
 
 /**     Authors: Yudi Hidayat, Asep Sutisna
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Periksa semua";
 $lang['checkspelling'] = "Periksa ejaan";
 $lang['closedmsg'] = "Maaf, topik ini ditutup. Tidak ada balasan yang diterima.";
 $lang['closemsgques'] = "Tutup topik dalam balasan?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Terima kasih, topik sudah ditutup/dibuka.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Terima kasih topik sudah dipotong.";

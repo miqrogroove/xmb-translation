@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Chọn tất cả";
 $lang['checkspelling'] = "Check Spelling";
 $lang['closedmsg'] = "Sorry, this topic is closed. No new replies are accepted.";
 $lang['closemsgques'] = "Khóa chủ đề?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Thank you, the topic has been closed/ opened. You are now being forwarded back to the thread list.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Thank you, the topic has been pruned. You are now being forwarded back to the thread list";

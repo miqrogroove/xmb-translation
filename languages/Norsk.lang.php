@@ -2,7 +2,7 @@
 
 /**    Made by:    Edquist
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Velg alle";
 $lang['checkspelling'] = "Stavekontroll";
 $lang['closedmsg'] = "Beklager, dette emner er lukket. Ingen nye innlegg er godtatt.";
 $lang['closemsgques'] = "Lukk emne ved svar?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Takk, emnet har blitt lukket/åpnet. Du blir nå videreført til emnelisten.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Takk, emnet har blitt splittet. Du blir nå sendt videre til emnelisten";

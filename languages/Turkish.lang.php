@@ -2,7 +2,7 @@
 
 /** Translated by saglik216
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Tümünü kontrol et";
 $lang['checkspelling'] = "Ýmla Kontrolü";
 $lang['closedmsg'] = "Üzgünüz, bu konu kapalýdýr. Yeni cevap kabul edilmiyor.";
 $lang['closemsgques'] = "Mesaj cevaplamaya Kapansýn mý?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Teþekkürler, Konu Kapandý/ Açýldý. Þimdi Konu Listesine Geri Dönün.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Teþekkürler, konu Kladýrýldý. Þimdi konu listesine Geri dönün.";

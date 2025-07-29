@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Válassz ki minden üzenetet";
 $lang['checkspelling'] = "Ellenõrizd a helyesírást";
 $lang['closedmsg'] = "Sajnálom de ez a topik bezárt és új hozzászólásokat már nem fogad.";
 $lang['closemsgques'] = "Tényleg lezárjam a topikot a hozzászólás elküldése után?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "A topik bezárása/megnyitása megtörtént. Most visszakerülsz a fórumok listájához.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "A topik megnyesése sikerült. Most visszakerülsz a topikok listájához";

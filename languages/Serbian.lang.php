@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Obeleži sve";
 $lang['checkspelling'] = "Proveri pravopis";
 $lang['closedmsg'] = "Žao nam je, tema je zatvorena i ne primaju se odgovori.";
 $lang['closemsgques'] = "Zatvori temu posle odgovora?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Hvala vam, tema je otvorena/zatvorena. Bićete vraćeni na spisak tema.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Hvala vam, tema je očišćena. Bićete vraćeni na spisak tema. ";

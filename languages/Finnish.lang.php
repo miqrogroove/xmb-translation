@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Valitse Kaikki";
 $lang['checkspelling'] = "Tarkista Oikeinkirjoitus";
 $lang['closedmsg'] = "Viestiketju on suljettu, eik‰ siihen voi en‰‰ l‰hett‰‰ viestej‰.";
 $lang['closemsgques'] = "Sulje viestiketju vastauksen j‰lkeen";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Viestiketju on suljettu tai avattu. Palataan luetteloon.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Viestiketju on karsittu. Palataan luetteloon.";

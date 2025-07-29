@@ -2,7 +2,7 @@
 
 /** translation in Polish by Tumuch
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Sprawd¼ wszystko";
 $lang['checkspelling'] = "Sprawd¼ pisowniê";
 $lang['closedmsg'] = "Przepraszam, ten temat jest zamkniêty. ¯adne nowe odpowiedzi nie s± akceptowane.";
 $lang['closemsgques'] = "Zamkn±æ temat przy odpowiedzi ?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Dziêkujê, temat zosta³ zamkniêty/otworzony. Zostajesz teraz przeniesiony z powrotem do listy w±tków.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Dziêkujê, temat zosta³ przyciêty. Zostajesz teraz przeniesiony z powrotem do listy w±tków.";

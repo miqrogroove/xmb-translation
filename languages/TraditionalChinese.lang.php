@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = " 檢查所有的";
 $lang['checkspelling'] = "檢查拼寫";
 $lang['closedmsg'] = "抱歉，這個話題已經關閉。";
 $lang['closemsgques'] = "在回覆後關閉主題?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "謝謝您，這個話題已經被關閉／開啟。您正被帶往話題目錄。";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "謝謝你,主題已經被修改。 您正被帶往話題目錄";

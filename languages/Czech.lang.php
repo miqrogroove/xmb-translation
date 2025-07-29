@@ -2,7 +2,7 @@
 
 /**Made by:    Kurt    Last mod:   21.8.2008
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Zatrhnout v¹e";
 $lang['checkspelling'] = "Kontrola pravopisu";
 $lang['closedmsg'] = "Toto téma je uzamèeno. Nelze odpovídat.";
 $lang['closemsgques'] = "Uzavøít téma po odpovìdi?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Téma bylo uzamèeno / otevøeno. Budete pøesmìrován(a) zpìt na seznam témat.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Téma bylo proèi¹tìno. Budete pøesmìrován(a) zpìt na seznam témat";

@@ -2,7 +2,7 @@
 
 /**  Made By: vlonjat4ever
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Zgjidhi Të Gjitha";
 $lang['checkspelling'] = "Konrtollo Drejtshkrimin";
 $lang['closedmsg'] = "Na vjen keq, tema është e mbyllur. Nuk pranohen përgjigje të tjera.";
 $lang['closemsgques'] = "Mbyll temën në përgjgije?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Faleminderit, tema është mbyllur/ hapur. Ju do të ridrejtoheni mbrapa në listën e temave.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Faleminderit, tema është shkurtuar. Ju do të ridrejtoheni mbrapa në listën e temave";

@@ -2,7 +2,7 @@
 
 /** Modded by Sergey aka Porutchik * http://forum.aeroion.ru
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Выделить всё";
 $lang['checkspelling'] = "Проверить правописание";
 $lang['closedmsg'] = "Извините, но эта тема закрыта. В нее нельзя добавлять новые ответы.";
 $lang['closemsgques'] = "Закрыть тему для ответов?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Спасибо, тема была закрыта / открыта. Сейчас вы перейдете в список тем.";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Спасибо, тема была очищена. Сейчас вы перейдете в список тем.";

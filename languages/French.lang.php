@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-1
+ * XMB 1.10.00-beta-2
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -237,6 +237,7 @@ $lang['checkall'] = "Tout cocher";
 $lang['checkspelling'] = "Vérifier l'Orthographe";
 $lang['closedmsg'] = "Désolé, ce sujet est fermé. Aucun message supplémentaire n peut être admis.";
 $lang['closemsgques'] = "Fermer le sujet sur une réponse ?";
+$lang['closenewthread'] = "Create a closed topic?";
 $lang['closethreadmsg'] = "Le sujet a été fermé/ouvert. Maintenant, vous allez être redirigé vers la liste des messages";
 $lang['close_window'] = "Close Window";
 $lang['complete_threadprune'] = "Merci, le sujet a été purgé. Vous allez être redirigé vers la liste des sujets.";
