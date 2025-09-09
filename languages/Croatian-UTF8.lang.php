@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Uredi direktorije";
 $lang['foldermsg'] = "Odvoji sve direktorije zarezom (tj. \"Direktorij 1, Direktorij 2\").";
 $lang['foldersupdate'] = "Lista direktorija je uspješno ažurirana.";
 $lang['foldersupdateerror'] = 'Slijedeći direktoriji nisu obrisani jer još uvijek sadrže u2u-e:';
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = 'Opcije podnožja:';
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Zaboravili ste lozinku?";
 $lang['forumjumpselect'] = "Odaberi Forum";
 $lang['forumnotempty'] = 'Odabrani forum nije prazan.  Forum mora biti prazan kako biste mogli izvesti ovu akciju.';
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Admin Direktorij Slika:";
 $lang['impossiblebanall'] = "Ne možete zabraniti <strong>sve</strong> IP-eve sa svoje ploče!!";
 $lang['imsavedmsg'] = "Vaša U2U poruka je spremljena. Sada ćete biti proslijeđeni u svoj direktorij nacrta.";
 $lang['imsentmsg'] = "Vaša U2U poruka je poslana. Sada ćete biti proslijeđeni natrag u svoj ulazni spremnik.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "U svim kategorijama";
 $lang['indexShowBarDesc'] = "Gdje bi se, u listi foruma, trebalo pojaviti zaglavlje tablica?";
 $lang['indexShowBarNone'] = "Nigdje";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "Već ste jednom zahtjevali lozinku u protekla 24 sata.<br />Ne možete ponovo zahtjevati lozinku unutar 24 sata.";
 $lang['lostpw_success'] = "Your new password is ready to use.  You may proceed to the login page.";
 $lang['lpoststats'] = "zadnji post";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

@@ -2,7 +2,7 @@
 
 /**    Made by:    yueyang
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "管理文件夹";
 $lang['foldermsg'] = "分开所有的文件夹 (也就是 \"文件夹 1,文件夹 2\").";
 $lang['foldersupdate'] = "文件夹目录成功地更新。";
 $lang['foldersupdateerror'] = '文件夹中有短消息不能删除文件夹:';
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = '页脚选项:';
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "忘记密码？";
 $lang['forumjumpselect'] = "Select A Forum";
 $lang['forumnotempty'] = 'The selected forum is not empty.  A forum must be empty to perform this action.';
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Admin Image Directory:";
 $lang['impossiblebanall'] = "您无法禁止论坛 <b>全部的</b> IP!!";
 $lang['imsavedmsg'] = "您的 U2U 讯息已经保存。您正被带往收件匣。";
 $lang['imsentmsg'] = "您的 U2U 讯息已经送出。您正被带往收件匣。";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "In all categories";
 $lang['indexShowBarDesc'] = "Where should, in the forumlist, the tableheader be shown?";
 $lang['indexShowBarNone'] = "Nowhere";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "您已经在过去24小时内请求过密码资料。<br>您不能在24小时内重复请求取得密码。";
 $lang['lostpw_success'] = "Your new password is ready to use.  You may proceed to the login page.";
 $lang['lpoststats'] = "最近一篇文章";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

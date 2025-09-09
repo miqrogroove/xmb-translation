@@ -2,7 +2,7 @@
 
 /**  Made By: vlonjat4ever
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Menaxho Dosjet";
 $lang['foldermsg'] = "Ndaji të gjitha dosjet me presje (shembull \"Dosja 1, Dosja 2\").";
 $lang['foldersupdate'] = "Lista e Dosjeve u përditësua me sukses.";
 $lang['foldersupdateerror'] = "Dosjet e mëposhtme nuk mund të fshihen sepse ato përmbajnë mesazhe:";
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = "Opsionet e Tabelës Fundore:";
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Harruat Fjalëkalimin?";
 $lang['forumjumpselect'] = "Zgjidh Një Forum";
 $lang['forumnotempty'] = "Forumi i zgjedhur nuk është bosh.  Forumi duhet të jetë bosh për të kryer këtë veprim.";
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Direktoria e figurave të Administratorit:";
 $lang['impossiblebanall'] = "Ju nuk mund të përjashtoni <strong>të gjitha</strong> Adresat IP nga forumi juaj!!";
 $lang['imsavedmsg'] = "Mesazhi juaj është ruajtur. Po ju drejtojme tek direktoria e Mesazheve të Ruajtura.";
 $lang['imsentmsg'] = "Mesazhi juaj është dërguar. Po ju drejtojmë tek Kutia e Mesazheve.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "Në të gjitha kategoritë";
 $lang['indexShowBarDesc'] = "Ku duhet të shfaqet, TabelaKokë, në listën e forumeve ?";
 $lang['indexShowBarNone'] = "Asgjëkundi";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "Ju e keni kërkuar njëherë fjalëkalimin brenda 24 orëve.<br />Nuk mund të kërkoni fjalëkalim të ri pa kaluar 24 orë.";
 $lang['lostpw_success'] = "Your new password is ready to use.  You may proceed to the login page.";
 $lang['lpoststats'] = "postimi i fundit";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

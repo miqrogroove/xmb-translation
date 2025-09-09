@@ -2,7 +2,7 @@
 
 /** translation in Polish by Tumuch
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Zarz±dzaj folderami";
 $lang['foldermsg'] = "Odseparuj wszystkie foldery przecinkami (np. \"Folder 1, Folder 2\").";
 $lang['foldersupdate'] = "Lista folderów zaktualizowana pomy¶lnie.";
 $lang['foldersupdateerror'] = 'Nastêpuj±ce foldery nie zosta³y usuniête, poniewa¿ wci±¿ zawieraj± wiadomo¶ci U2U: ';
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = 'Opcje stopki:';
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Zapomnia³e¶ has³a ?";
 $lang['forumjumpselect'] = "Wybierz forum";
 $lang['forumnotempty'] = 'Wybrane forum nie jest puste. Forum musi byæ puste aby wykonaæ tê operacjê.';
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Katalog obrazków administratora:";
 $lang['impossiblebanall'] = "Nie mo¿esz zablokowaæ <strong>wszystkich</strong> adresów IP na Twoim forum !!!";
 $lang['imsavedmsg'] = "Twoja wiadomo¶æ U2U zosta³a zapisana. Zostaniesz teraz przeniesiony do folderu niewys³anych wiadomo¶ci.";
 $lang['imsentmsg'] = "Twoja wiadomo¶æ U2U zosta³a wys³ana. Zostaniesz teraz przeniesiony do swojej skrzynki odbiorczej.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "We wszystkich kategoriach";
 $lang['indexShowBarDesc'] = "Gdzie powinien, w li¶cie forum, byæ pokazany tytu³ tabeli ?";
 $lang['indexShowBarNone'] = "Nigdzie";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "Ju¿ prosi³e¶ raz o has³o w przeci±gu ostatnich 24 godzin.<br />Mo¿esz prosiæ o has³o raz na 24 godzin.";
 $lang['lostpw_success'] = "Your new password is ready to use.  You may proceed to the login page.";
 $lang['lpoststats'] = "ostatni post";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

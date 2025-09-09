@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -287,7 +287,7 @@ $lang['config_page'] = "Configuration";
 $lang['config_inline'] = "Copy the following into to a new file, and call it &quot;config.php&quot;.&nbsp; Upload it to the root of your XMB directory. Then, click to continue to the next steps.";
 $lang['config_write_error'] = "XMB couldn't create your configuration file on the server as it does not have enough permissions to do so.  If you would like to try again, adjust the file and directory permissions, or select a different configuration method.";
 $lang['config_write_success'] = "Your XMB configuration has been created correctly on the server.";
-$lang['confirmDeletePosts'] = "You are about to delete all this user's posts. Are you sure you wish to continue?";
+$lang['confirmDeletePosts'] = "You are about to delete all posts for user '\$member'. Are you sure you wish to continue?";
 $lang['confirmDeleteUser'] = "The following members will be deleted:";
 $lang['continue_button'] = "Continue";
 $lang['cookies_disabled'] = "Your web browser settings are blocking cookies.  To login or register, please enable cookies, refresh the page, and then re-enter your details.";
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Manage Folders";
 $lang['foldermsg'] = "Separate all folders by commas (i.e. &quot;Folder 1, Folder 2&quot;).";
 $lang['foldersupdate'] = "Folders list successfully updated.";
 $lang['foldersupdateerror'] = 'The following folders were not deleted because they still contained U2Us:';
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = 'Footer Options:';
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Forgot password?";
 $lang['forumjumpselect'] = "Select A Forum";
 $lang['forumnotempty'] = 'The selected forum is not empty.  A forum must be empty to perform this action.';
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Admin Image Directory:";
 $lang['impossiblebanall'] = "You cannot ban <strong>all</strong> IPs from your board!!";
 $lang['imsavedmsg'] = "Your U2U message has been saved. You will now be taken to your drafts folder.";
 $lang['imsentmsg'] = "Your U2U message has been sent. You will now be taken back to your inbox.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "In all categories";
 $lang['indexShowBarDesc'] = "Where should, in the forumlist, the tableheader be shown?";
 $lang['indexShowBarNone'] = "Nowhere";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "You have already requested a new password within the last 24 hours.<br />You may not request it again in the same 24-hour period.";
 $lang['lostpw_success'] = "Your new password is ready to use. You may proceed to the login page.";
 $lang['lpoststats'] = "last post";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

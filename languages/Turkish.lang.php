@@ -2,7 +2,7 @@
 
 /** Translated by saglik216
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Klasörleri Yönet";
 $lang['foldermsg'] = "Birden Fazla Klasör Eklemek için Aralarýna Virgül býrakýnýz  (Örnek \"Klasör 1, Klasör 2\").";
 $lang['foldersupdate'] = "Klasör listesi Baþarýyla güncellendi.";
 $lang['foldersupdateerror'] = 'The following Klasör Silinemedi Çünkü they still contained PMs:';
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = 'Footer Seçenekleri:';
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Þifremi Unuttum?";
 $lang['forumjumpselect'] = "Bir Forum Seçin";
 $lang['forumnotempty'] = 'Seçili Forum Boþ.  Bu Ýþlem için Dolu bir Forum Seçmelisiniz.';
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Admin Resim Dizini:";
 $lang['impossiblebanall'] = "You can not ban <strong>Tüm</strong> ips from your board!!";
 $lang['imsavedmsg'] = "PM mesajýnýz kaydedildi. Taslaklara geri dönün.";
 $lang['imsentmsg'] = "PM mesajýnýz gönderildi. Gelen kutusuna geri dönün.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "Tüm kategorilerde";
 $lang['indexShowBarDesc'] = "Where should, in the forumlist, the tableheader be shown?";
 $lang['indexShowBarNone'] = "Nowhere";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "Üzgünüz, 24 saat Geçmeden Yeni Þifre Deðiþtirme/Ýsteme Talebinizi Gönderemiyoruz.<br />24-saatlik Periyodun bitmesini Bekleyiniz.";
 $lang['lostpw_success'] = "Your new password is ready to use.  You may proceed to the login page.";
 $lang['lpoststats'] = "son Mesaj";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

@@ -2,7 +2,7 @@
 
 /**Made by:    Kurt    Last mod:   21.8.2008
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Správa slo¾ek";
 $lang['foldermsg'] = "Oddìlit slo¾ky èárkou (napø \"Folder 1, Folder 2\").";
 $lang['foldersupdate'] = "Seznam slo¾ek aktualizován.";
 $lang['foldersupdateerror'] = 'Následující slo¾ky nebyly smazány, proto¾e obsahují soukromé zprávy:';
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = 'Nastavení patièky:';
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Zapomnìl(a) jste heslo?";
 $lang['forumjumpselect'] = "Zvolte sekci:";
 $lang['forumnotempty'] = 'The selected forum is not empty.  A forum must be empty to perform this action.';
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Admin Image Directory:";
 $lang['impossiblebanall'] = "Nemù¾ete zakázat pøístup <strong>v¹ech</strong> IP na fórum!!";
 $lang['imsavedmsg'] = "Va¹e soukromá zpráva byla ulo¾ena. Budete pøesmìrován(a) do slo¾ky Koncepty.";
 $lang['imsentmsg'] = "Va¹e soukromá zpráva byla odeslána. Budete pøesmìrován(a)) zpìt na Pøijaté.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "Ve v¹ech kategoriích";
 $lang['indexShowBarDesc'] = "Kde má být v seznamu témat zobrazena hlavièka?";
 $lang['indexShowBarNone'] = "Nikde";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "Ji¾ jste bìhem posledních 24 hodin po¾doval heslo.<br />Nemù¾ete ho ¾ádat víckrát bìhem 24 hodinového intervalu.";
 $lang['lostpw_success'] = "Your new password is ready to use.  You may proceed to the login page.";
 $lang['lpoststats'] = "Poslední pøíspìvek";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

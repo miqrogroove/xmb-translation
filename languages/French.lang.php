@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Gérer les dossiers";
 $lang['foldermsg'] = "Séparer les dossiers par une virgule (\",\") (ex: \"Dossier 1, Dossier 2\").";
 $lang['foldersupdate'] = "La liste des dossiers a été mise à jour.";
 $lang['foldersupdateerror'] = "Les dossiers suivants n'ont pas été effacés parce qu'ils contenaient encore des messages U2U:";
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = "Option de pied de page:";
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Mot de passe oublié ?";
 $lang['forumjumpselect'] = "Selectionner un forum";
 $lang['forumnotempty'] = "Le forum choisi n'est pas vide. Le forum doit être vide pour effectuer cette action.";
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Répertoire des fichiers Images des Administrateurs:";
 $lang['impossiblebanall'] = 'Vous ne pouvez pas bannir <b>toutes</b> les IPs du forum!!';
 $lang['imsavedmsg'] = "Votre U2U a été enregistré. Vous allez être redirigé vers votre dossier U2U.";
 $lang['imsentmsg'] = "Votre message privé U2U a été envoyé.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "Dans toutes les catégories";
 $lang['indexShowBarDesc'] = "Où l'en-tête du tableau doît-elle apparaître dans la liste du forum?";
 $lang['indexShowBarNone'] = "Nulle part";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA Une demande de réinitialisation 
 $lang['lostpw_in24hrs'] = "Vous avez déjà adressé une demande de mot de passe durant ces dernières 24 heures.<br />Vous ne pouvez le faire qu'une fois par tranche de 24 heures.";
 $lang['lostpw_success'] = "Votre nouveau mot de passe est actif.  Vous pouvez vous connecter.";
 $lang['lpoststats'] = "Dernier message";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

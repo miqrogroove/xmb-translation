@@ -2,7 +2,7 @@
 
 /**     Authors: Yudi Hidayat, Asep Sutisna
  * eXtreme Message Board
- * XMB 1.10.00-beta-2
+ * XMB 1.10.00-beta-3
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -425,7 +425,10 @@ $lang['folderlist'] = "Atur Folder";
 $lang['foldermsg'] = "Pemisah semua folder dengan koma (contoh. \"Folder 1, Folder 2\").";
 $lang['foldersupdate'] = "Daftar folder sudah diupdate.";
 $lang['foldersupdateerror'] = 'Folder tidak bisa dihapus karena masih berisi pesan U2U:';
+$lang['font_size'] = 'Font Size';
 $lang['footer_options'] = 'Pilihan Footer:';
+$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
+$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
 $lang['forgotpw'] = "Lupa Password?";
 $lang['forumjumpselect'] = "Pilih Forum";
 $lang['forumnotempty'] = 'Forum yang dipilih tidak kosong. Forum harus dalam keadaan kosong untuk melakukan perintah ini.';
@@ -464,6 +467,7 @@ $lang['imgdiradm'] = "Admin Image Directory:";
 $lang['impossiblebanall'] = "Anda bisa menghapus blok <strong>semua</strong> IP dari forum!!";
 $lang['imsavedmsg'] = "Pesan U2U Anda disimpan.";
 $lang['imsentmsg'] = "Pesan U2U sudah dikirim.";
+$lang['inactiveUser'] = "No Activity";
 $lang['indexShowBarCats'] = "Dalam semua kategori";
 $lang['indexShowBarDesc'] = "Dimana akan ditampilkan ?";
 $lang['indexShowBarNone'] = "Disini";
@@ -524,6 +528,7 @@ $lang['lostpw_body_eval'] = "Hello \$name,\n\nA password reset request was recei
 $lang['lostpw_in24hrs'] = "Anda sudah meminta password dalam 24 jam terakhir.<br />Anda tidak bisa meminta kembali dalam periode 24 jam.";
 $lang['lostpw_success'] = "Your new password is ready to use.  You may proceed to the login page.";
 $lang['lpoststats'] = "Kiriman terakhir";
+$lang['lurking'] = 'Lurking';
 $lang['mailerDkimDomain'] = "DKIM domain name.";
 $lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 $lang['mailerDkimKey'] = "DKIM private key file path.";

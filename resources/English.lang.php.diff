@@ -1,12 +1,12 @@
 --- C:/Temp/English.lang.php	Wed Jul 30 07:55:06 2025
-+++ C:/Temp/xmb-git/xmb-translation/languages/English.lang.php	Mon Jul 28 19:08:54 2025
++++ C:/Temp/xmb-git/xmb-translation/languages/English.lang.php	Tue Sep  9 14:56:57 2025
 @@ -1,32 +1,25 @@
  <?php
 +
  /**
   * eXtreme Message Board
 - * XMB 1.9.12
-+ * XMB 1.10.00-beta-2
++ * XMB 1.10.00-beta-3
   *
   * Developed And Maintained By The XMB Group
 - * Copyright (c) 2001-2020, The XMB Group
@@ -192,7 +192,7 @@
  $lang['cantsplit'] = "This topic cannot be split as there are no replies.";
  $lang['cantthreadprune'] = "This topic cannot be pruned as there are no replies.";
  $lang['captchacaseon'] = "This code is case-sensitive.";
-@@ -209,34 +211,82 @@ $lang['captchaimagemaxfont'] = 'Max Font Size:';
+@@ -209,51 +211,102 @@ $lang['captchaimagemaxfont'] = 'Max Font Size:';
  $lang['captchaimageminfont'] = 'Min Font Size:';
  $lang['captchaimagetype'] = 'Image Type:';
  $lang['captchaimagewidth'] = 'Image Width:';
@@ -236,6 +236,7 @@
 +$lang['closethreadmsg'] = "Thank you, the topic has been closed/opened. You are now being forwarded back to the thread list.";
 +$lang['close_window'] = "Close Window";
  $lang['complete_threadprune'] = "Thank you, the topic has been pruned. You are now being forwarded back to the thread list";
+-$lang['confirmDeletePosts'] = "You are about to delete all this user's posts. Are you sure you wish to continue?";
 +$lang['config_error'] = "Incorrect Configuration";
 +$lang['config_error_connect'] = "Unable to connect to the database specified in config.php.";
 +$lang['config_error_defaults'] = "The config.php file is not fully configured.";
@@ -282,10 +283,9 @@
 +$lang['config_inline'] = "Copy the following into to a new file, and call it &quot;config.php&quot;.&nbsp; Upload it to the root of your XMB directory. Then, click to continue to the next steps.";
 +$lang['config_write_error'] = "XMB couldn't create your configuration file on the server as it does not have enough permissions to do so.  If you would like to try again, adjust the file and directory permissions, or select a different configuration method.";
 +$lang['config_write_success'] = "Your XMB configuration has been created correctly on the server.";
- $lang['confirmDeletePosts'] = "You are about to delete all this user's posts. Are you sure you wish to continue?";
++$lang['confirmDeletePosts'] = "You are about to delete all posts for user '\$member'. Are you sure you wish to continue?";
  $lang['confirmDeleteUser'] = "The following members will be deleted:";
  $lang['continue_button'] = "Continue";
-@@ -243,17 +293,20 @@ $lang['continue_button'] = "Continue";
  $lang['cookies_disabled'] = "Your web browser settings are blocking cookies.  To login or register, please enable cookies, refresh the page, and then re-enter your details.";
  $lang['coppastatus'] = "COPPA Compliancy Status:";
  $lang['coppa_directions'] = "What is your age?";
@@ -419,7 +419,7 @@
  $lang['floodprotect'] = "You are not allowed to post this frequently.  Flood protection is triggered when more than one post is submitted in an unexpected manner.  Check if your post is already saved or try again in a few moments.";
  $lang['floodprotect_u2u'] = "You are not allowed to send messages this frequently.  Flood protection is triggered when more than one message is submitted in an unexpected manner.  Check if your message is already saved or try again in a few moments.";
  $lang['fnasorry'] = "Sorry, this feature is currently not available...";
-@@ -359,9 +422,9 @@ $lang['fnasorry'] = "Sorry, this feature is curren
+@@ -359,10 +422,13 @@ $lang['fnasorry'] = "Sorry, this feature is curren
  $lang['fnasorry2'] = "We apologize for the inconvenience.";
  $lang['fnasorry3'] = "We apologize for the inconvenience.<br />The board administrator has disabled this option, and it cannot be used at this time. If you believe you have received this message in error, please contact the board webmaster";
  $lang['folderlist'] = "Manage Folders";
@@ -428,10 +428,14 @@
  $lang['foldersupdate'] = "Folders list successfully updated.";
 -$lang['foldersupdateerror'] = 'The following folders were not deleted because they still contained u2us:';
 +$lang['foldersupdateerror'] = 'The following folders were not deleted because they still contained U2Us:';
++$lang['font_size'] = 'Font Size';
  $lang['footer_options'] = 'Footer Options:';
++$lang['force_new_pw_detail'] = 'You must change your password to complete the login.  Your current password does not meet the password length requirement of the security policy.';
++$lang['force_new_pw_success'] = 'Your password change was successful.  You are now being forwarded to the front page.';
  $lang['forgotpw'] = "Forgot password?";
  $lang['forumjumpselect'] = "Select A Forum";
-@@ -374,11 +437,15 @@ $lang['found'] = "Found";
+ $lang['forumnotempty'] = 'The selected forum is not empty.  A forum must be empty to perform this action.';
+@@ -374,11 +440,15 @@ $lang['found'] = "Found";
  $lang['general'] = 'General';
  $lang['generic_file'] = 'File to Upload:';
  $lang['generic_missing'] = 'The item you requested could not be found.';
@@ -449,7 +453,7 @@
  $lang['gotobottom'] = "Go To Bottom";
  $lang['gototop'] = "Go To Top";
  $lang['guestpostingonmsg'] = "<br />Anonymous Posting is on for this forum.<br /><span class=\"smalltxt\"> Do not enter a username or password to post anonymously.</span>";
-@@ -388,13 +455,13 @@ $lang['hidden'] = "Invisible";
+@@ -388,21 +458,37 @@ $lang['hidden'] = "Invisible";
  $lang['hide_banned_users'] = "Hide Banned Members<br /><span class='smalltxt'>Removes public profiles, links, and stats.</span>";
  $lang['hottopiceval'] = "more than \$hottopic replies";
  $lang['ignorelist'] = "Ignore List";
@@ -464,8 +468,9 @@
 +$lang['impossiblebanall'] = "You cannot ban <strong>all</strong> IPs from your board!!";
  $lang['imsavedmsg'] = "Your U2U message has been saved. You will now be taken to your drafts folder.";
  $lang['imsentmsg'] = "Your U2U message has been sent. You will now be taken back to your inbox.";
++$lang['inactiveUser'] = "No Activity";
  $lang['indexShowBarCats'] = "In all categories";
-@@ -402,7 +469,22 @@ $lang['indexShowBarDesc'] = "Where should, in the
+ $lang['indexShowBarDesc'] = "Where should, in the forumlist, the tableheader be shown?";
  $lang['indexShowBarNone'] = "Nowhere";
  $lang['indexShowBarTop'] = "Top of the page only";
  $lang['index_stats'] = "Index Stats Bar Status:<br /><span class=\"smalltxt\">This option will enable/disable the stats bar on index.</span>";
@@ -488,7 +493,7 @@
  $lang['invalidFilename'] = "Invalid Filename";
  $lang['invalidforumpw'] = "The password you entered is invalid.";
  $lang['invalidip'] = "Invalid IP Address Format";
-@@ -410,7 +492,7 @@ $lang['invalidtid'] = "Thread cannot be merged.  I
+@@ -410,7 +496,7 @@ $lang['invalidtid'] = "Thread cannot be merged.  I
  $lang['invertselection'] = "Invert Selection";
  $lang['ipbandisable'] = "Disable IP Banning";
  $lang['ipbanenable'] = "Enable IP Banning";
@@ -497,7 +502,7 @@
  $lang['ipwarning'] = "<br /><strong>Warning!</strong> Your IP Address is on the list. You'll be permanently banned if you log out.";
  $lang['key'] = 'Key: ';
  $lang['langimportfail'] = "The language could not be imported.";
-@@ -418,32 +500,60 @@ $lang['langimportsuccess'] = "The language importe
+@@ -418,32 +504,61 @@ $lang['langimportsuccess'] = "The language importe
  $lang['last50todayeval'] = "Last \$onlinetodaycount Members Who Have Visited Today (if applicable)";
  $lang['lastactive'] = "Last active:";
  $lang['lastreply1'] = "on";
@@ -530,6 +535,7 @@
 +$lang['lostpw_success'] = "Your new password is ready to use. You may proceed to the login page.";
  $lang['lpoststats'] = "last post";
 -$lang['max_addresses_per_entry'] = "Due to server-protection, it is not allowed to save more than 10 addresses at one time.";
++$lang['lurking'] = 'Lurking';
 +$lang['mailerDkimDomain'] = "DKIM domain name.";
 +$lang['mailerDkimIntro'] = "DKIM message signing is an advanced anti-spam technology recognized by major e-mail services. If your e-mail server doesn't sign outgoing mail by default, you can have XMB sign each message before it is sent. This feature is optional. When all three fields are set, the feature is enabled. You will need to provide your own key pair from a 3rd-party tool. The public key must be saved in your DNS. The private key must be saved in a separate file, and you must specify the full path and filename below. The domain name normally should match everything after the @ in the Administrator E-Mail address. The selector is part of the name you created in DNS. To disable this feature, clear at least one of the fields.";
 +$lang['mailerDkimKey'] = "DKIM private key file path.";
@@ -567,7 +573,7 @@
  $lang['mcpread'] = "Read?";
  $lang['mcpuid'] = "UID";
  $lang['memberisoff'] = "Member Is Offline";
-@@ -452,8 +562,8 @@ $lang['memcpmood'] = "Your Current Mood:";
+@@ -452,8 +567,8 @@ $lang['memcpmood'] = "Your Current Mood:";
  $lang['memcp_otherinfo'] = "Other Information";
  $lang['memcp_otheroptions'] = "Other Options";
  $lang['memposts'] = "Posts";
@@ -578,7 +584,7 @@
  $lang['message'] = "Message";
  $lang['misconlinetoday'] = "The following ";
  $lang['misconlinetoday2'] = " members have visited today...";
-@@ -476,8 +586,8 @@ $lang['moderation_new_member'] = "New Member";
+@@ -476,8 +591,8 @@ $lang['moderation_new_member'] = "New Member";
  $lang['moderation_new_memq'] = "New Members Queue";
  $lang['moderation_new_replies'] = "New Replies";
  $lang['moderation_new_threads'] = "New Threads";
@@ -589,7 +595,7 @@
  $lang['moderation_replies_eval'] = "Your \$result new replies are pending.  They will be listed in this thread after they are reviewed by a staff member.";
  $lang['moderation_replies_single'] = "Your new reply is pending.  It will be listed in this thread after it is reviewed by a staff member.";
  $lang['moderation_setting'] = "New User Quarantine<br /><span class='smalltxt'>All posts are held for review until the user is approved by staff.</span>";
-@@ -501,19 +611,21 @@ $lang['mood'] = "Mood:";
+@@ -501,19 +616,21 @@ $lang['mood'] = "Mood:";
  $lang['moresmilies'] = "More smilies";
  $lang['moved'] = "Moved:";
  $lang['moveques'] = "Move?";
@@ -615,7 +621,7 @@
  $lang['newslettersubmit'] = "Your newsletter has been submitted";
  $lang['newsreccopy'] = "Receive a copy of the newsletter";
  $lang['newsubject'] = "New Thread Subject:";
-@@ -521,29 +633,26 @@ $lang['newswait'] = "Wait a few seconds after this
+@@ -521,29 +638,26 @@ $lang['newswait'] = "Wait a few seconds after this
  $lang['newtemplate'] = "New";
  $lang['newu2u1'] = "You have";
  $lang['newu2u2'] = "new U2U message(s)";
@@ -651,7 +657,7 @@
  $lang['nou2umsg'] = "You currently do not have any U2U Messages in your inbox.";
  $lang['no_buddies'] = "There are no addresses in your address book";
  $lang['no_poll'] = "This is not a poll!";
-@@ -550,13 +659,10 @@ $lang['no_poll'] = "This is not a poll!";
+@@ -550,13 +664,10 @@ $lang['no_poll'] = "This is not a poll!";
  $lang['no_templates'] = "templates.xmb was not found.";
  $lang['no_url_fopen'] = "This feature has been disabled by the allow_url_fopen directive in your server's PHP configuration.";
  $lang['numberusing'] = "Used:";
@@ -666,7 +672,7 @@
  $lang['onlinecp'] = "Using the administration panel";
  $lang['onlineeditnoprofile'] = 'Editing an unknown profile';
  $lang['onlineeditprofile'] = "Editing \$user's profile";
-@@ -595,7 +701,7 @@ $lang['onlineu2usend'] = "Sending a U2U";
+@@ -595,7 +706,7 @@ $lang['onlineu2usend'] = "Sending a U2U";
  $lang['onlineu2uview'] = "Reading a U2U";
  $lang['onlineunknown'] = 'Performing an unknown action';
  $lang['onlineviewcat'] = "Viewing category: ";
@@ -675,7 +681,7 @@
  $lang['onlineviewthread'] = "Reading thread: ";
  $lang['onlinevote'] = "Voting";
  $lang['onlinewhosonline'] = "Viewing members online";
-@@ -602,23 +708,25 @@ $lang['onlinewhosonline'] = "Viewing members onlin
+@@ -602,23 +713,25 @@ $lang['onlinewhosonline'] = "Viewing members onlin
  $lang['opennew'] = "An open topic with new posts";
  $lang['opentopic'] = "An open topic";
  $lang['optimize'] = 'Optimize Tables';
@@ -705,7 +711,7 @@
  $lang['polls'] = "Polls";
  $lang['pollvotenotselected'] = "You have not selected a poll option.";
  $lang['posticonsadded'] = "Post Icons Have Been Added.";
-@@ -629,22 +737,23 @@ $lang['postpermerr'] = "You don't have permission
+@@ -629,22 +742,23 @@ $lang['postpermerr'] = "You don't have permission
  $lang['postpoll'] = "This post contains a poll";
  $lang['postword'] = "Search for Censored Words in posts";
  $lang['privforummsg'] = "Sorry, you are not permitted to view this forum";
@@ -735,7 +741,7 @@
  $lang['queries'] = "Queries";
  $lang['quickjump_status'] = "Quick Jump Status:<br /><span class=\"smalltxt\">This option enables/disables the Quick Jump feature when selecting forums and categories in the header and footer.</span>";
  $lang['quickreply'] = 'Quick Reply';
-@@ -652,6 +761,7 @@ $lang['quickreply_status'] = "Quick Reply Status:<
+@@ -652,6 +766,7 @@ $lang['quickreply_status'] = "Quick Reply Status:<
  $lang['rankinfo'] = "Based on the number of posts you have, you are assigned to a rank. Each rank has its own status and its own amount of stars. Below are the user rank settings for this board:";
  $lang['rankingsupdate'] = "User rankings updated successfully!";
  $lang['raw_mysql'] = "Insert Raw SQL";
@@ -743,7 +749,7 @@
  $lang['reason'] = "Reason:";
  $lang['refreshbuddylist'] = "Refresh Address Book";
  $lang['refreshpage'] = 'Refresh Page';
-@@ -659,32 +769,35 @@ $lang['regeneratethumbnail'] = "Regenerate Thumbna
+@@ -659,32 +774,35 @@ $lang['regeneratethumbnail'] = "Regenerate Thumbna
  $lang['regged'] = "Thank you for registering. We have logged you in and are forwarding you to the main page.";
  $lang['reggedonly'] = "You must be registered to view these boards.";
  $lang['registerrulestitle'] = "Registration Terms";
@@ -785,7 +791,7 @@
  $lang['search_advanced'] = "Advanced Search";
  $lang['secure_login'] = "Secure Login - increased security on public computers";
  $lang['security_subject'] = "Security Event";
-@@ -693,9 +806,9 @@ $lang['seperatebycomma'] = "Separate multiple entr
+@@ -693,9 +811,9 @@ $lang['seperatebycomma'] = "Separate multiple entr
  $lang['showsubforums'] = "Sub-forums on index status:<br /><span class=\"smalltxt\">This will enable or disable sub-forums display on index.</span>";
  $lang['showtopics'] = "Show topics from";
  $lang['show_logs_in_threads'] = "Show moderator logs when viewing threads?";
@@ -797,7 +803,7 @@
  $lang['smdir'] = "Smilie Directory:";
  $lang['smileyinsert'] = "Auto Smiley Inserter:";
  $lang['smilieexists'] = 'Smilie already exists';
-@@ -706,9 +819,6 @@ $lang['smilieupdate'] = "Smilies Updated";
+@@ -706,9 +824,6 @@ $lang['smilieupdate'] = "Smilies Updated";
  $lang['smtotal'] = "Total Visible Clickable Smilies:";
  $lang['sortby'] = " and sort them by";
  $lang['space_cats'] = "Spaced Categories Status:";
@@ -807,7 +813,7 @@
  $lang['splitthreadmsg'] = "Thank you, the topic has been split. You are now being forwarded back to the thread list.";
  $lang['srchbyforum'] = "in (forum):";
  $lang['srchfilter_double'] = "Show only one post per thread?";
-@@ -715,7 +825,7 @@ $lang['srchfilter_double'] = "Show only one post p
+@@ -715,7 +830,7 @@ $lang['srchfilter_double'] = "Show only one post p
  $lang['startticker'] = "Resume";
  $lang['statistics'] = "Statistics";
  $lang['stats4'] = "Please welcome our newest member";
@@ -816,7 +822,7 @@
  $lang['status'] = "Status";
  $lang['stopticker'] = "Pause";
  $lang['subaddedmsg'] = "You have successfully subscribed to the thread. You will now be taken to your subscriptions list.";
-@@ -723,7 +833,7 @@ $lang['subdefault'] = "Subscribe to replies by def
+@@ -723,7 +838,7 @@ $lang['subdefault'] = "Subscribe to replies by def
  $lang['subjectInTitle'] = "Show thread subject in page title";
  $lang['submitvote'] = "Submit Vote";
  $lang['subonlistmsg'] = "You are already subscribed to this thread.";
@@ -825,7 +831,7 @@
  $lang['superadmin'] = "Super Administrator";
  $lang['superadminonly'] = 'This function can only be used by Super-Administrators';
  $lang['templatedelconfirm'] = "Are you sure you want to delete the selected template?";
-@@ -744,7 +854,6 @@ $lang['textaddfav'] = "Add to Favorites";
+@@ -744,7 +859,6 @@ $lang['textaddfav'] = "Add to Favorites";
  $lang['textadmin'] = "Administrator";
  $lang['textadminoptions'] = "Admin Options:";
  $lang['textagree'] = "I Agree";
@@ -833,7 +839,7 @@
  $lang['textall'] = "All";
  $lang['textallforumsandsubs'] = 'All Forums and Sub-Forums';
  $lang['textallow'] = "Allow:";
-@@ -772,9 +881,9 @@ $lang['textbanfromu2u'] = "You are unable to send
+@@ -772,9 +886,9 @@ $lang['textbanfromu2u'] = "You are unable to send
  $lang['textbanip'] = "Ban IP";
  $lang['textbanned'] = "Banned";
  $lang['textbannedip'] = "<br />This IP is currently banned.";
@@ -846,7 +852,7 @@
  $lang['textbbrules'] = "Board Rules";
  $lang['textbbrulestxt'] = "If rules are on, please enter your rules:";
  $lang['textbday'] = "Birthday:";
-@@ -826,11 +935,11 @@ $lang['texteditpro'] = "Edit Profile";
+@@ -826,11 +940,11 @@ $lang['texteditpro'] = "Edit Profile";
  $lang['textemail'] = "E-Mail";
  $lang['textemailnotify'] = "Receive e-mail on reply?";
  $lang['textemailonu2u'] = "Receive e-mail notification on new U2U";
@@ -860,7 +866,7 @@
  $lang['textfaq10'] = "Where can I view all the members?";
  $lang['textfaq11'] = "How do I post a new message?";
  $lang['textfaq12'] = "Can I reply to a message?";
-@@ -840,7 +949,7 @@ $lang['textfaq15'] = "Can I insert an attachment?"
+@@ -840,7 +954,7 @@ $lang['textfaq15'] = "Can I insert an attachment?"
  $lang['textfaq16'] = "Where do I log out?";
  $lang['textfaq17'] = "What are smilies?";
  $lang['textfaq18'] = "How can I create and vote in polls?";
@@ -869,7 +875,7 @@
  $lang['textfaq2'] = "Does this forum use cookies?";
  $lang['textfaq20'] = "Can I become a moderator?";
  $lang['textfaq21'] = "What are User Ranks?";
-@@ -851,25 +960,25 @@ $lang['textfaq6'] = "What is U2U?";
+@@ -851,25 +965,25 @@ $lang['textfaq6'] = "What is U2U?";
  $lang['textfaq7'] = "Where do I log in?";
  $lang['textfaq8'] = "How do I search the board?";
  $lang['textfaq9'] = "How do I U2U a member?";
@@ -913,7 +919,7 @@
  $lang['textfaqextra'] = "Extra";
  $lang['textfaqstatus'] = "FAQ Status:";
  $lang['textfavorites'] = "Favorites";
-@@ -893,9 +1002,10 @@ $lang['textfilesurlpath2'] = "(+MultiViews) /files
+@@ -893,9 +1007,10 @@ $lang['textfilesurlpath2'] = "(+MultiViews) /files
  $lang['textfilesurlpath3'] = "(+MultiViews) /files/\$aid/\$filename";
  $lang['textfilesurlpath4'] = "(mod_rewrite) /\$pid/\$aid/";
  $lang['textfilesurlpath5'] = "(mod_rewrite) /\$aid/\$filename";
@@ -925,7 +931,7 @@
  $lang['textfixoattachments'] = "Fix Orphaned Attachments";
  $lang['textfixopolls'] = "Fix Orphaned Polls";
  $lang['textfixoposts'] = "Fix Orphaned Posts";
-@@ -909,6 +1019,7 @@ $lang['textforum'] = "Forum:";
+@@ -909,6 +1024,7 @@ $lang['textforum'] = "Forum:";
  $lang['textforumname'] = "Forum Name:";
  $lang['textforumopts'] = "Forum Options:";
  $lang['textforums'] = "Forums";
@@ -933,7 +939,7 @@
  $lang['textforumupdate'] = "Forums updated successfully!";
  $lang['textforward'] = "Forward";
  $lang['textforwardu2utoemail'] = "Send to my e-mail";
-@@ -929,7 +1040,6 @@ $lang['texthottopic'] = "Replies required for hot
+@@ -929,7 +1045,6 @@ $lang['texthottopic'] = "Replies required for hot
  $lang['texthtml'] = "HTML";
  $lang['texthtmlis'] = "HTML is";
  $lang['texticon'] = "Icon:";
@@ -941,7 +947,7 @@
  $lang['textillegalquery'] = "The query you used is not allowed.";
  $lang['textimgcode'] = "IMG Code";
  $lang['textimgcodeis'] = "[img] Code is";
-@@ -936,10 +1046,11 @@ $lang['textimgcodeis'] = "[img] Code is";
+@@ -936,10 +1051,11 @@ $lang['textimgcodeis'] = "[img] Code is";
  $lang['textimporttheme'] = "Import Theme";
  $lang['textinforum'] = "in forum:";
  $lang['textinthread'] = "In Thread:";
@@ -954,7 +960,7 @@
  $lang['textipresolve'] = "DNS Lookup";
  $lang['textipupdate'] = "IP Banning updated successfully!";
  $lang['textjan'] = "January";
-@@ -959,7 +1070,7 @@ $lang['textlogin_incorrect'] = "Login Details Inco
+@@ -959,7 +1075,7 @@ $lang['textlogin_incorrect'] = "Login Details Inco
  $lang['textlogout'] = "Logout";
  $lang['textlogsdump'] = "Clear Control Panel Logs";
  $lang['textlostpw'] = "Recover Lost Password";
@@ -963,7 +969,7 @@
  $lang['textlostpwnote2'] = "Please enter your <strong>current username</strong> and <strong>new password</strong>.  Then confirm the new password by entering it again.";
  $lang['textmanagefolders'] = "Manage Folders";
  $lang['textmar'] = "March";
-@@ -975,7 +1086,7 @@ $lang['textmemliststatus'] = "Member List Status:"
+@@ -975,7 +1091,7 @@ $lang['textmemliststatus'] = "Member List Status:"
  $lang['textmergethread'] = "Merge Thread";
  $lang['textmesperday'] = "messages per day";
  $lang['textmessage'] = "Message:";
@@ -972,7 +978,7 @@
  $lang['textmod'] = "Moderator";
  $lang['textmodby'] = "Forum Moderators:";
  $lang['textmoderator'] = "Moderator:";
-@@ -989,7 +1100,6 @@ $lang['textmovemethod2'] = "Move thread and leave
+@@ -989,7 +1105,6 @@ $lang['textmovemethod2'] = "Move thread and leave
  $lang['textmovesucc'] = "U2U(s) moved successfully.";
  $lang['textmoveto'] = "Move thread to:";
  $lang['textmpp'] = "Members Per Page";
@@ -980,7 +986,7 @@
  $lang['textmyhome'] = "My Home";
  $lang['textnever'] = "Never";
  $lang['textnewcode'] = "New";
-@@ -997,7 +1107,7 @@ $lang['textnewforum'] = "New Forum";
+@@ -997,7 +1112,7 @@ $lang['textnewforum'] = "New Forum";
  $lang['textnewgroup'] = "New Category";
  $lang['textnewip'] = "New IP:";
  $lang['textnewmember'] = '[NOTIFY] New Member signup';
@@ -989,7 +995,7 @@
  $lang['textnewpassword'] = "New Password";
  $lang['textnewpicon'] = "New Post Icon:";
  $lang['textnewpoll'] = "New Poll";
-@@ -1014,7 +1124,6 @@ $lang['textnocat'] = "- No Category -";
+@@ -1014,7 +1129,6 @@ $lang['textnocat'] = "- No Category -";
  $lang['textnofolder'] = "No folder selected";
  $lang['textnoforum'] = "The forum you have chosen does not exist.";
  $lang['textnoforumsexist'] = "No forums exist.";
@@ -997,7 +1003,7 @@
  $lang['textnomur'] = 'You can not mark an outgoing U2U unread';
  $lang['textnone'] = "None";
  $lang['textnonechosen'] = "No U2Us chosen.";
-@@ -1021,7 +1130,7 @@ $lang['textnonechosen'] = "No U2Us chosen.";
+@@ -1021,7 +1135,7 @@ $lang['textnonechosen'] = "No U2Us chosen.";
  $lang['textnopassword'] = "You did not enter a password.";
  $lang['textnopostsyet'] = "No posts made yet.";
  $lang['textnosub'] = "no subject";
@@ -1006,7 +1012,7 @@
  $lang['textnothread'] = "The topic you have chosen does not exist.";
  $lang['textnousername'] = "You did not enter a username";
  $lang['textnov'] = "November";
-@@ -1039,6 +1148,7 @@ $lang['textorder'] = "Order:";
+@@ -1039,6 +1153,7 @@ $lang['textorder'] = "Order:";
  $lang['textpages'] = "Pages:";
  $lang['textpassword'] = "Password:";
  $lang['textpasswordcf'] = "Confirm Password:";
@@ -1014,7 +1020,7 @@
  $lang['textpendinglogin'] = "Pending First Login";
  $lang['textpermission1'] = "Normal";
  $lang['textpermission2'] = "Admins";
-@@ -1057,6 +1167,7 @@ $lang['textpostread'] = "Posting &amp; Reading Mes
+@@ -1057,6 +1172,7 @@ $lang['textpostread'] = "Posting &amp; Reading Mes
  $lang['textpostreply'] = "Post Reply";
  $lang['textposts'] = "Posts:";
  $lang['textpowered'] = "Powered By XMB";
@@ -1022,7 +1028,7 @@
  $lang['textppp'] = "Posts Per Page:";
  $lang['textpreview'] = "Preview Post";
  $lang['textpreviewu2u'] = "Preview U2U";
-@@ -1072,7 +1183,7 @@ $lang['textpwincorrect'] = 'You entered an incorre
+@@ -1072,7 +1188,7 @@ $lang['textpwincorrect'] = 'You entered an incorre
  $lang['textquote'] = "Quote:";
  $lang['textre'] = "Re:";
  $lang['textread'] = "Read";
@@ -1031,7 +1037,7 @@
  $lang['textregdate'] = "Registration Date";
  $lang['textreggedonly'] = "Allow only registered users to view boards?";
  $lang['textregister'] = "Register";
-@@ -1104,7 +1215,6 @@ $lang['textsep'] = "September";
+@@ -1104,7 +1220,6 @@ $lang['textsep'] = "September";
  $lang['textserverload'] = "Server Load:";
  $lang['textsettings'] = "Settings";
  $lang['textsettingsupdate'] = "Settings updated successfully!";
@@ -1039,7 +1045,7 @@
  $lang['textsig'] = "Signature:";
  $lang['textsite'] = "Site:";
  $lang['textsitename'] = "Site Name:";
-@@ -1177,7 +1287,6 @@ $lang['textuntopthread'] = "Untop Thread";
+@@ -1177,7 +1292,6 @@ $lang['textuntopthread'] = "Untop Thread";
  $lang['textupgrade'] = "Upgrade";
  $lang['textuseboa'] = "Using the Board";
  $lang['textusedefault'] = "--Use Default--";
@@ -1047,7 +1053,7 @@
  $lang['textusercp'] = "User Control Panel";
  $lang['textuserlist'] = "User Access List (separate with comma):";
  $lang['textuserman'] = "User Maintenance";
-@@ -1189,12 +1298,13 @@ $lang['textviews'] = "Views:";
+@@ -1189,12 +1303,13 @@ $lang['textviews'] = "Views:";
  $lang['textvote'] = "Vote:";
  $lang['textwidth'] = "Table Width:";
  $lang['textwithstatus'] = "with this status:";
@@ -1062,7 +1068,7 @@
  $lang['themeupdate'] = "Themes updated successfully!";
  $lang['theme_already_exists'] = "A theme with this name already exists!";
  $lang['threads'] = 'Threads';
-@@ -1208,43 +1318,43 @@ $lang['tickercode'] = "Code Language in Newsticker
+@@ -1208,43 +1323,43 @@ $lang['tickercode'] = "Code Language in Newsticker
  $lang['tickercontents'] = "News In Newsticker:";
  $lang['tickername'] = "News &amp; Updates";
  $lang['timemsg'] = "Processed in";
@@ -1143,7 +1149,7 @@
  $lang['tocont'] = "to continue.";
  $lang['todaydays'] = "days";
  $lang['todaygo'] = "Go!";
-@@ -1259,10 +1369,9 @@ $lang['tool_mood'] = 'Moods Updated';
+@@ -1259,10 +1374,9 @@ $lang['tool_mood'] = 'Moods Updated';
  $lang['tool_threadtotal'] = 'Fixed Thread Totals';
  $lang['tool_u2u'] = 'U2Us Cleared';
  $lang['tool_whosonline'] = 'Whos Online Cleared';
@@ -1155,7 +1161,7 @@
  $lang['topthreadmsg'] = "You have successfully topped/untopped the message. You will now be taken back to the thread list.";
  $lang['topuntop'] = "Top/Untop";
  $lang['translations'] = "Translations";
-@@ -1281,7 +1390,7 @@ $lang['u2ualert5'] = " unread U2U message. Would y
+@@ -1281,7 +1395,7 @@ $lang['u2ualert5'] = " unread U2U message. Would y
  $lang['u2ualert6'] = " unread U2U messages. Would you like to view them now?";
  $lang['u2ublocked'] = "The would-be recipient of this U2U has blocked you, so you can't send this message.";
  $lang['u2udump'] = "Clear All U2Us";
@@ -1164,7 +1170,7 @@
  $lang['u2uempty'] = 'The U2U you are trying to save is empty.';
  $lang['u2umsgempty'] = 'The U2U you are trying to send is empty.';
  $lang['u2unotloggedin'] = "You must be logged in or registered to use U2U";
-@@ -1293,25 +1402,53 @@ $lang['upgrade'] = "Insert your SQL data below";
+@@ -1293,25 +1407,53 @@ $lang['upgrade'] = "Insert your SQL data below";
  $lang['upgradenote'] = "Note: \$table_something is automatically substituted by xmb with the real table name (eg xmb_something), you do not have to do this yourself (you can though!).";
  $lang['upgraderesults'] = "Query Results:";
  $lang['upgradesuccess'] = "Query successful!";
@@ -1223,7 +1229,7 @@
  $lang['whocanpost11'] = "All users can post new topics";
  $lang['whocanpost12'] = "<strong>Administrators</strong> can post new topics";
  $lang['whocanpost13'] = "<strong>Administrators and Moderators can post new topics</strong>";
-@@ -1320,12 +1457,14 @@ $lang['whocanpost21'] = "all users can reply.";
+@@ -1320,12 +1462,14 @@ $lang['whocanpost21'] = "all users can reply.";
  $lang['whocanpost22'] = "Administrators can reply.";
  $lang['whocanpost23'] = "Administrators and Moderators can reply.";
  $lang['whocanpost24'] = "no replies are allowed.";
