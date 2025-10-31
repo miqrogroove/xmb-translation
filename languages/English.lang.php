@@ -2,7 +2,7 @@
 
 /**
  * eXtreme Message Board
- * XMB 1.10.00-beta-3
+ * XMB 1.10.01
  *
  * Developed And Maintained By The XMB Group
  * Copyright (c) 2001-2025, The XMB Group
@@ -1254,7 +1254,7 @@ $lang['texttext'] = "Text Color:";
 $lang['texttheme'] = "Theme:";
 $lang['textthemefile'] = "Theme File:<br /><span class=\"smalltxt\">(must be valid!)</span>";
 $lang['textthemeimportfail'] = "The theme could not be imported.";
-$lang['textthemeimportsuccess'] = "The theme has been been imported successfully.";
+$lang['textthemeimportsuccess'] = "The theme has been imported successfully.";
 $lang['textthemename'] = "Theme Name:";
 $lang['texttime'] = "Time:";
 $lang['texttimeformat'] = "Time Format:";
